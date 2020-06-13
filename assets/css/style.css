@@ -7235,8 +7235,8 @@ a.link_shop.link_clikcol.browser-window__link img {
     }
     .toggle .container {
     padding-left: 0;
-    margin-top: 0px;
-    /* margin-top: 120px; */
+    /* margin-top: 0px; */
+    margin-top: 120px; 
 }
 .single-bottom-slider {
     margin-top: 100px;
