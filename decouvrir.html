@@ -5,33 +5,15 @@
       <meta content="width=device-width, initial-scale=1.0" name="viewport">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
       <title> Pitayaresto - Home</title>
-      <link rel='stylesheet' id='bootstrap-css'  href='assets/vendor/bootstrap/css/bootstrap.min.css' media='all' />
-      <link rel='stylesheet' id='style-css'  href='assets/css/style.css' media='all' />
-      <link rel="stylesheet" id="sb-font-awesome-css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css?ver=5.4.1" media="all">
-      <link rel='stylesheet' id='carousel-css'  href='http://www.pitayaresto.guka5588.odns.fr/wp-content/themes/pityaresto/assets/vendor/owl.carousel/assets/owl.carousel.min.css?ver=5.4.1' media='all' />
-      <script type='text/javascript' src='http://www.pitayaresto.guka5588.odns.fr/wp-content/themes/pityaresto/assets/vendor/owl.carousel/owl.carousel.min.js?ver=5.4.1'></script>
+   <link rel='stylesheet'   href='assets/vendor/bootstrap/css/bootstrap.min.css' media='all' />
+      <link rel='stylesheet'   href='assets/css/style.css' media='all' />
+      <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="all">
+       <link rel='stylesheet'  href='assets/vendor/owl.carousel/assets/owl.carousel.min.css' media='all' />
       <script type='text/javascript' src='assets/js/jquery.js'></script>
-      <script type='text/javascript' src='ssets/vendor/bootstrap/js/bootstrap.bundle.min.js?ver=5.4.1'></script>
-      <script type="text/javascript">
-         jQuery(window).on('load', function () {
-         setTimeout(function () {
-         jQuery(window).scrollTop(0);
-         });         
-         });
-         
-             jQuery(document).ready(function($) {
-                  
-                 $(".scroll").click(function(event){		
-                     event.preventDefault();
-                     $('html,body').animate({scrollTop:$(this.hash).offset().top},0);
-                 });
-             });
-             
-         
-         
-      </script>
+            <script type='text/javascript' src='assets/js/popup.js'></script>
+      <script type='text/javascript' src='assets/vendor/bootstrap/js/bootstrap.bundle.min.js'></script>
    </head>
-   <body class="page-template demo-3 decouvrir">
+   <body class=" decouvrir">
       <!-- ======= Top Bar ======= -->
       <!-- ======= Header ======= -->
       <header id="header" class="fixed-top d-flex align-items-center">
@@ -104,181 +86,7 @@
                      </div>
                   </div>
                </div>
-               <script>
-                  jQuery('.navicon').on('click', function (e) {
-                    e.preventDefault();
-                    jQuery(this).toggleClass('navicon--active');
-                    jQuery('.toggle').toggleClass('toggle--active');
-                    
-                     });
-                  
-                  jQuery('.navicon').mouseleave(function(){
-                  jQuery(this).addClass("navicon--actived");
-                  });
-                  
-                  
-                     
-               </script>
-               <script type="text/javascript">
-                  jQuery(document).ready(function(jQuery) {
-                      jQuery(".scroll").click(function(event){		
-                          event.preventDefault();
-                         //jQuery('html,body').animate({scrollTop:jQuery(this.hash).offset().top},1000);
-                       });
-                       
-                     
-                  
-                    jQuery( ".link_liver" ).click(function() {
-                      jQuery(".toggle_liver").toggleClass("toggle_liver--active");
-                   jQuery(".link_liver").toggleClass("active");
-                      });
-                   
-                   jQuery( ".link_clikcol" ).click(function() {
-                      jQuery(".toggle_clickancollect").toggleClass("toggle_clickancollect--active");
-                    jQuery(".link_clikcol").toggleClass("active");
-                      });
-                   
-                  
-                      jQuery('#recipeCarousel').carousel({
-                   interval: 8000
-                  })
-                  
-                  jQuery('#recipeCarousel .carousel-item').each(function() {
-                   var minPerSlide = 4;
-                   var next = jQuery(this).next();
-                   if (!next.length) {
-                       next = jQuery(this).siblings(':first');
-                   }
-                   next.children(':first-child').clone().appendTo(jQuery(this));
-                  
-                   for (var i = 0; i < minPerSlide; i++) {
-                       next = next.next();
-                       if (!next.length) {
-                           next = jQuery(this).siblings(':first');
-                       }
-                  
-                       next.children(':first-child').clone().appendTo(jQuery(this));
-                   }
-                  });
-                  
-                  jQuery('#recipeCarousel2').carousel({
-                   interval: 8000
-                  })
-                  
-                  
-                  jQuery('#recipeCarousel2 .carousel-item').each(function() {
-                   var minPerSlide = 4;
-                   var next = jQuery(this).next();
-                   if (!next.length) {
-                       next = jQuery(this).siblings(':first');
-                   }
-                   next.children(':first-child').clone().appendTo(jQuery(this));
-                  
-                   for (var i = 0; i < minPerSlide; i++) {
-                       next = next.next();
-                       if (!next.length) {
-                           next = jQuery(this).siblings(':first');
-                       }
-                  
-                       next.children(':first-child').clone().appendTo(jQuery(this));
-                   }
-                  });
-                  
-                  jQuery('#recipeCarousel3').carousel({
-                   interval: 8000
-                  })
-                  
-                  
-                  jQuery('#recipeCarousel').hover(function(){
-                  jQuery("#recipeCarousel").carousel('pause');
-                  },function(){
-                  jQuery("#recipeCarousel").carousel('cycle');
-                  });
-                  
-                  
-                  jQuery('#heroCarousel').hover(function(){
-                  jQuery("#heroCarousel").carousel('cycle');
-                  },function(){
-                  jQuery("#heroCarousel").carousel('cycle');
-                  });
-                  jQuery("#heroCarousel").carousel('cycle');
-                  
-                  jQuery('#recipeCarousel3 .carousel-item').each(function() {
-                   var minPerSlide = 4;
-                   var next = jQuery(this).next();
-                   if (!next.length) {
-                       next = jQuery(this).siblings(':first');
-                   }
-                   next.children(':first-child').clone().appendTo(jQuery(this));
-                  
-                   for (var i = 0; i < minPerSlide; i++) {
-                       next = next.next();
-                       if (!next.length) {
-                           next = jQuery(this).siblings(':first');
-                       }
-                  
-                       next.children(':first-child').clone().appendTo(jQuery(this));
-                   }
-                  });
-                  
-                  
-                  
-                  function isScrolledIntoView(el) {
-                  var elemTop = el.getBoundingClientRect().top;
-                  var elemBottom = el.getBoundingClientRect().bottom;
-                  
-                  var isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
-                  return isVisible;
-                  }
-                  
-                  jQuery(window).on('scroll', function() {
-                  
-                  if (isScrolledIntoView(document.getElementById('contour'))) {
-                   
-                  jQuery('.counter').each(function () {
-                  jQuery( ".counter" ).addClass( "visib" );
-                  jQuery( ".counter" ).addClass( "contour" );
-                  jQuery( ".invs" ).addClass( "hid" );
-                  
-                      jQuery(this).prop('Counter',0).animate({
-                      Counter: jQuery(this).text()
-                      }, {
-                      duration: 1000,
-                      easing: 'swing',
-                      step: function (now) {
-                      jQuery(this).text(Math.ceil(now));
-                      }
-                      });
-                      });
-                   // Unbind scroll event
-                  
-                  }
-                  
-                  });
-                  
-                  jQuery(window).on('scroll', function() {
-                  jQuery(window).on('scroll');
-                  });				
-                  
-                  
-                  
-                  
-                  });
-                  
-                  
-                  
-                  
-                  
-                    
-                  
-                  
-                  
-                   
-               </script>
-               <script src="assets/js/wow.min.js"></script>	
-               <script>
-                  new WOW().init();
-               </script>
+              
             </div>
             <div class="logo-top2 d-flex justify-content-center">
                <h1 class="text-light"><a href="/index.php">
@@ -292,7 +100,7 @@
                      <!-- <i class="icofont-phone"></i>-->
                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 481.2 481.2" style="enable-background:new 0 0 481.2 481.2;" xml:space="preserve">
                         <style type="text/css">
-                           .st0{fill:#EC6813;}
+                           .st0{fill:#a5a5a5;}
                         </style>
                         <g>
                            <path class="st0" d="M367.1,406c-8.5,8.7-17.5,16.7-25.6,25.7c-11.7,13.2-26.5,17.4-43.2,16.4c-24.4-1.3-47.1-9.5-68.8-20.1
@@ -312,7 +120,6 @@
                <a href="" class="link_decoration conp browser-window__link">
                   <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
                      <style type="text/css">
-                        .st0{fill:none;stroke:#FFFFFF;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
                         .st1{fill:#FFFFFF;}
                      </style>
                      <g>
@@ -354,75 +161,32 @@
          </div>
       </header>
       <!-- End Header -->
-      <!-- ======= Hero Section ======= -->
-      <section id="hero" class="pageall">
-         <div class="opacity_all"></div>
-         <div class="hero-container">
-         </div>
-      </section>
-      <!-- End Hero -->
+
+
+
+<!-- bottom seach option  -->
       <div class="toggle_liver">
          <a class="link_liver link_remove"> <span>Fermer</span></a>
-         <div id="asl-search" class="asl-p-cont">
+         <div id="asl-search " class="asl-p-cont  for-other-page">
             <div class="container-fluid">
                <div class="row d-flex justify-content-center">
-                  <div class="col-sm-6 search_filter">
+                  <div class="col-md-6 search_filter">
                      <div class="btn-wrapper">
                         <p>
-                           <input type="text" class="form-control pac-target-input" data-submit="disable" data-provide="typeahead" tabindex="2" id="auto-complete-searchd" placeholder="TROUVER UN RESTAURANT" autocomplete="off">
+                           <input type="text" class="form-control" data-submit="disable" data-provide="typeahead" tabindex="2" id="auto-complete-searchd" placeholder="TROUVER UN RESTAURANT"  class="asl-search-address form-control typeahead isp_ignore">
                            <span class="err-spn">Destination Missing or Invalid</span>
                            <span><i class="fas fa-search"></i></span>
                         </p>
                      </div>
                   </div>
-                  <div class="col-sm-2" style="display:none !important;">
+                  <div class="col-md-2" style="display:none !important;">
                      <div class="drop_box_filter">
                         <p><span>Category</span></p>
                         <div class="categories_filter">
-                           <select id="asl-categories" style="display: none;">
-                              <option value="0">Aucun</option>
-                              <option value="1">Arts &amp; Entertainment</option>
-                              <option value="2">For The Home</option>
-                              <option value="4">Amusement Park</option>
-                              <option value="5">Medical / Dental / Vision Care</option>
-                              <option value="6">Jewelry</option>
-                              <option value="7">Fitness</option>
-                              <option value="8">Electronics</option>
-                              <option value="9">Pets</option>
-                              <option value="10">Auto</option>
-                              <option value="11">Local Services</option>
-                              <option value="13">Beauty and Spas</option>
-                              <option value="14">Nightlife</option>
-                              <option value="16">Restaurants</option>
-                              <option value="17">Travel</option>
-                           </select>
-                           <div class="btn-group">
-                              <button type="button" class="multiselect adropdown-toggle style-btn btn btn-default" data-toggle="adropdown" title="Aucun"><span class="multiselect-selected-text">Aucun</span> <b class="caret"></b></button>
-                              <ul class="multiselect-container adropdown-menu" style="max-height: 400px; overflow: hidden auto;">
-                                 <li class="multiselect-item filter" value="0">
-                                    <div class="input-group"><span class="input-group-addon"><i class="icon-search-2"></i></span><input class="form-control multiselect-search" type="text" placeholder="Chercher"><span class="input-group-btn"><button class="btn btn-default multiselect-clear-filter" type="button"><i class="icon-cancel-circled2"></i></button></span></div>
-                                 </li>
-                                 <li class="active"><a tabindex="0"><label class="radio"><input type="radio" value="0"> Aucun</label></a></li>
-                                 <li><a tabindex="0"><label class="radio"><input type="radio" value="1"> Arts &amp; Entertainment</label></a></li>
-                                 <li><a tabindex="0"><label class="radio"><input type="radio" value="2"> For The Home</label></a></li>
-                                 <li><a tabindex="0"><label class="radio"><input type="radio" value="4"> Amusement Park</label></a></li>
-                                 <li><a tabindex="0"><label class="radio"><input type="radio" value="5"> Medical / Dental / Vision Care</label></a></li>
-                                 <li><a tabindex="0"><label class="radio"><input type="radio" value="6"> Jewelry</label></a></li>
-                                 <li><a tabindex="0"><label class="radio"><input type="radio" value="7"> Fitness</label></a></li>
-                                 <li><a tabindex="0"><label class="radio"><input type="radio" value="8"> Electronics</label></a></li>
-                                 <li><a tabindex="0"><label class="radio"><input type="radio" value="9"> Pets</label></a></li>
-                                 <li><a tabindex="0"><label class="radio"><input type="radio" value="10"> Auto</label></a></li>
-                                 <li><a tabindex="0"><label class="radio"><input type="radio" value="11"> Local Services</label></a></li>
-                                 <li><a tabindex="0"><label class="radio"><input type="radio" value="13"> Beauty and Spas</label></a></li>
-                                 <li><a tabindex="0"><label class="radio"><input type="radio" value="14"> Nightlife</label></a></li>
-                                 <li><a tabindex="0"><label class="radio"><input type="radio" value="16"> Restaurants</label></a></li>
-                                 <li><a tabindex="0"><label class="radio"><input type="radio" value="17"> Travel</label></a></li>
-                              </ul>
-                           </div>
                         </div>
                      </div>
                   </div>
-                  <div class="col-sm-4">
+                  <div class="col-md-4">
                      <div class="btn-wrapper">
                         <a id="asl-btn-searchd" class="btn_p">FAITES VOUS LIVRER</a>
                      </div>
@@ -431,7 +195,11 @@
             </div>
          </div>
       </div>
-      <div class="toggle_clickancollect">
+
+
+
+
+      <div class="toggle_clickancollect  for-other-page">
          <a class="link_clikcol link_remove"> <span>Fermer</span></a>
          <div id="asl-search" class="asl-p-cont">
             <div class="container-fluid">
@@ -439,7 +207,7 @@
                   <div class="col-sm-6 search_filter">
                      <div class="btn-wrapper">
                         <p>
-                           <input type="text" class="form-control pac-target-input" data-submit="disable" data-provide="typeahead" tabindex="2" id="auto-complete-searchf" placeholder="TROUVER UN RESTAURANT" autocomplete="off">
+                           <input type="text" class="form-control" data-submit="disable" data-provide="typeahead" tabindex="2" id="auto-complete-searchf" placeholder="TROUVER UN RESTAURANT"  class="asl-search-address form-control typeahead isp_ignore">
                            <span class="err-spn">Destination Missing or Invalid</span>
                            <span><i class="fas fa-search"></i></span>
                         </p>
@@ -449,46 +217,6 @@
                      <div class="drop_box_filter">
                         <p><span>Category</span></p>
                         <div class="categories_filter">
-                           <select id="asl-categories" style="display: none;">
-                              <option value="0">Aucun</option>
-                              <option value="1">Arts &amp; Entertainment</option>
-                              <option value="2">For The Home</option>
-                              <option value="4">Amusement Park</option>
-                              <option value="5">Medical / Dental / Vision Care</option>
-                              <option value="6">Jewelry</option>
-                              <option value="7">Fitness</option>
-                              <option value="8">Electronics</option>
-                              <option value="9">Pets</option>
-                              <option value="10">Auto</option>
-                              <option value="11">Local Services</option>
-                              <option value="13">Beauty and Spas</option>
-                              <option value="14">Nightlife</option>
-                              <option value="16">Restaurants</option>
-                              <option value="17">Travel</option>
-                           </select>
-                           <div class="btn-group">
-                              <button type="button" class="multiselect adropdown-toggle style-btn btn btn-default" data-toggle="adropdown" title="Aucun"><span class="multiselect-selected-text">Aucun</span> <b class="caret"></b></button>
-                              <ul class="multiselect-container adropdown-menu" style="max-height: 400px; overflow: hidden auto;">
-                                 <li class="multiselect-item filter" value="0">
-                                    <div class="input-group"><span class="input-group-addon"><i class="icon-search-2"></i></span><input class="form-control multiselect-search" type="text" placeholder="Chercher"><span class="input-group-btn"><button class="btn btn-default multiselect-clear-filter" type="button"><i class="icon-cancel-circled2"></i></button></span></div>
-                                 </li>
-                                 <li class="active"><a tabindex="0"><label class="radio"><input type="radio" value="0"> Aucun</label></a></li>
-                                 <li><a tabindex="0"><label class="radio"><input type="radio" value="1"> Arts &amp; Entertainment</label></a></li>
-                                 <li><a tabindex="0"><label class="radio"><input type="radio" value="2"> For The Home</label></a></li>
-                                 <li><a tabindex="0"><label class="radio"><input type="radio" value="4"> Amusement Park</label></a></li>
-                                 <li><a tabindex="0"><label class="radio"><input type="radio" value="5"> Medical / Dental / Vision Care</label></a></li>
-                                 <li><a tabindex="0"><label class="radio"><input type="radio" value="6"> Jewelry</label></a></li>
-                                 <li><a tabindex="0"><label class="radio"><input type="radio" value="7"> Fitness</label></a></li>
-                                 <li><a tabindex="0"><label class="radio"><input type="radio" value="8"> Electronics</label></a></li>
-                                 <li><a tabindex="0"><label class="radio"><input type="radio" value="9"> Pets</label></a></li>
-                                 <li><a tabindex="0"><label class="radio"><input type="radio" value="10"> Auto</label></a></li>
-                                 <li><a tabindex="0"><label class="radio"><input type="radio" value="11"> Local Services</label></a></li>
-                                 <li><a tabindex="0"><label class="radio"><input type="radio" value="13"> Beauty and Spas</label></a></li>
-                                 <li><a tabindex="0"><label class="radio"><input type="radio" value="14"> Nightlife</label></a></li>
-                                 <li><a tabindex="0"><label class="radio"><input type="radio" value="16"> Restaurants</label></a></li>
-                                 <li><a tabindex="0"><label class="radio"><input type="radio" value="17"> Travel</label></a></li>
-                              </ul>
-                           </div>
                         </div>
                      </div>
                   </div>
@@ -501,396 +229,58 @@
             </div>
          </div>
       </div>
-      <main id="main">
-         <main role="main">
-            <div class="bottom_slider page_clik  d-flex align-items-center">
-               <div class="container">
-                  <div class="col-xs-4 col-sm-4 col-md-4 link_nl">
-                     <a class="link_shop link_shopp browser-window__link " href="/restaurants/">
-                        <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
-                           <style type="text/css">
-                              .st0{fill:#A5A5A5;}
-                           </style>
-                           <g>
-                              <g>
-                                 <path class="st0" d="M50,96.9c-0.4,0-0.7-0.1-1-0.4c-0.1-0.1-8.6-7.6-17-18.4c-11.4-14.6-17.1-28-17.1-39.8
-                                    C14.9,19,30.6,3.2,50,3.2c19.4,0,35.1,15.8,35.1,35.1c0,15.5-9.3,30.5-17.1,40.4c-8.4,10.6-16.7,17.5-17,17.8
-                                    C50.7,96.8,50.3,96.9,50,96.9z M50,6.2c-17.7,0-32.1,14.4-32.1,32.1c0,24,26.7,50,32.1,55c5.5-4.9,32.1-29.8,32.1-55
-                                    C82.1,20.6,67.7,6.2,50,6.2z"></path>
-                              </g>
-                              <g>
-                                 <path class="st0" d="M50,61.2c-12.8,0-23.2-10.4-23.2-23.2c0-12.8,10.4-23.2,23.2-23.2c12.8,0,23.2,10.4,23.2,23.2
-                                    C73.2,50.8,62.8,61.2,50,61.2z M50,17.7c-11.1,0-20.2,9.1-20.2,20.2c0,11.1,9.1,20.2,20.2,20.2c11.1,0,20.2-9.1,20.2-20.2
-                                    C70.2,26.8,61.1,17.7,50,17.7z"></path>
-                              </g>
-                           </g>
-                           <g>
-                              <path class="st0" d="M21.7,50.8l29.7-8.1c0,0,1-0.4,1.2-0.2s-1.1,0.5-1.1,0.5l-29.4,9C22.1,51.9,21.6,51.8,21.7,50.8z"></path>
-                              <path class="st0" d="M78,52.4l-30.3-5.1c0,0-1.1-0.1-1.2-0.3c-0.1-0.2,1.2,0,1.2,0l30.4,4.1C78.1,51.1,78.6,51.4,78,52.4z"></path>
-                              <path class="st0" d="M39.3,47.4L52.9,43c0,0,0.2-0.2,0.2-0.2c0.2,0,8.7-0.6,8.7-0.6s-0.4,3.2-2.4,5.7c-2.5-0.3-12.5-1.7-12.5-1.7
-                                 s-1.1-0.3-1.2,0.5s0.9,1.1,1.3,1.2c0.3,0.1,10.7,1.8,10.7,1.8s-2.7,2.7-8,2.8C44.4,52.7,40.5,49.3,39.3,47.4z"></path>
-                              <path class="st0" d="M58.2,36.2c-0.1,0.3,0.3,1.1,1.2,1c0,0,0.2-1.2,0.5-1.7c0.3-0.5,0.5-2.2,0.3-3l-0.6,0
-                                 C59.5,32.5,59.8,36.3,58.2,36.2"></path>
-                              <path class="st0" d="M55.8,38.2c1-1.1,0.3,0.1,0.2,0.2c-0.1,0.1-2.7,3.1-4.1,2.5C52.2,40.7,53.8,40.5,55.8,38.2 M48.7,42.7l3.6-1
-                                 c0,0,0.1,0,0.1,0c0.1,0,0.2,0,0.3,0c0.3,0.1,0.5,0.4,0.5,0.7c0,0.1,0,0.2-0.1,0.2c1.7-0.4,3.6-1.2,5.2-2.7c1.7-1.5,1.1-2.5,1.1-2.5
-                                 c-0.1,0-0.5,0.2-1.1-0.1c-0.6-0.3-0.7-1.2-0.7-1.2c-0.9,0-3.4,2.6-5,3.8c-1.6,1.2-4.9,1.4-4.9,1.8C47.7,42.2,48.1,42.5,48.7,42.7"></path>
-                              <path class="st0" d="M50.8,30.4c-0.1-0.1-0.1-0.1-0.2-0.1c-0.8-0.5-1.6-0.9-2.3-1.4c-0.1,0-0.1-0.1-0.2-0.1
-                                 c-0.3-0.1-0.4-0.1-0.5,0.2c-0.1,0.3-0.2,0.7-0.3,1c-0.1,0.2,0,0.3,0.3,0.4c0,0,0.1,0,0.1,0c1,0,2,0,3.1,0
-                                 C50.8,30.4,50.8,30.4,50.8,30.4"></path>
-                              <path class="st0" d="M50.9,30.9c0,0-0.1,0-0.1,0.1c-0.8,0.5-1.6,0.9-2.4,1.4c-0.5,0.3-0.5,0.4-0.1,0.9c0.2,0.2,0.4,0.4,0.6,0.6
-                                 c0.1,0.1,0.3,0.1,0.4,0c0,0,0.1-0.1,0.1-0.2C49.9,32.7,50.4,31.8,50.9,30.9C50.9,30.9,50.9,30.9,50.9,30.9"></path>
-                              <path class="st0" d="M51.2,31c-0.1,0.1-0.1,0.1-0.1,0.2c-0.5,0.8-1,1.6-1.4,2.4c-0.3,0.5-0.3,0.7,0.3,0.9c0.3,0.1,0.5,0.1,0.8,0.2
-                                 c0.2,0,0.3-0.1,0.3-0.2c0-0.1,0-0.2,0-0.2c0-1,0.1-2,0.1-3.1C51.2,31.1,51.2,31.1,51.2,31"></path>
-                              <path class="st0" d="M50.8,30.6c-1.1,0-2.1,0-3.1,0c-0.3,0-0.5,0.2-0.4,0.5c0.1,0.3,0.2,0.7,0.3,1c0.1,0.2,0.2,0.3,0.4,0.2
-                                 c0,0,0,0,0.1,0C48.9,31.8,49.9,31.2,50.8,30.6C50.8,30.7,50.8,30.7,50.8,30.6"></path>
-                              <path class="st0" d="M51.5,31.1c0,0.3,0,0.5,0,0.8c0,0.8,0,1.6-0.1,2.4c0,0.1,0,0.2,0,0.2c0,0.1,0.1,0.2,0.3,0.2
-                                 c0.4-0.1,0.8-0.2,1.2-0.3c0.2,0,0.2-0.2,0.2-0.3c0-0.1,0-0.2-0.1-0.2C52.5,32.9,52,31.9,51.5,31.1C51.5,31,51.5,31,51.5,31.1"></path>
-                              <path class="st0" d="M51.7,30.9c0.2,0.3,0.3,0.6,0.5,0.8c0.3,0.6,0.7,1.3,1,1.9c0,0.1,0.1,0.1,0.1,0.2c0.1,0.1,0.2,0.2,0.4,0
-                                 c0.3-0.3,0.6-0.6,0.9-0.9c0.1-0.1,0.1-0.2,0-0.3c-0.1-0.1-0.1-0.1-0.2-0.2c-0.8-0.5-1.7-1-2.5-1.5C51.8,30.9,51.8,30.9,51.7,30.9"></path>
-                              <path class="st0" d="M51.6,35.2c-0.9,0.1-1.8-0.1-2.7-0.6c-2.2-1.3-3-4.1-1.7-6.3l0,0l0,0c0.1,0,0.1,0,0.2,0.1
-                                 c0.1,0.1,0.2,0.2,0.6,0.5l0,0.1c-0.4-0.2-0.5-0.4-0.6-0.5c-0.1-0.1-0.1-0.1-0.1-0.1c-1.3,2.2-0.5,5,1.7,6.2c2.2,1.3,5,0.6,6.2-1.6
-                                 c0,0-0.1-0.1-0.2-0.1c-0.2,0-0.4-0.1-0.8-0.3l0-0.1c0.4,0.2,0.6,0.2,0.8,0.3c0.2,0,0.2,0.1,0.3,0.1l0,0l0,0
-                                 C54.4,34.3,53,35.1,51.6,35.2z"></path>
-                              <path class="st0" d="M45.8,23.1c-0.3-0.2-0.6-0.5-0.5,0c0,0.4,0,0.4,0,0.5c0,0.1,0,0.3,0.4,0.1C46,23.6,46.1,23.3,45.8,23.1
-                                 M44.6,22.6c-0.5,0.1-0.8,0-0.6,0.4c0.3,0.4,0.3,0.8,0.4,1.2c0.2-0.1,0.7-0.2,0.7-0.7C45.1,22.8,45.1,22.5,44.6,22.6 M43.5,23
-                                 c-0.4,0-1.1,1-1.2,1.2c0.3-0.1,0.9,0.1,1.5,0.7c0.1,0.1,0.3-0.4,0.3-0.4S44,23,43.5,23 M41.9,24.8c-0.2,0.6-0.5,1.1-0.4,1.9
-                                 c0.2-0.2,1.2-1.2,1.9-1c0.4,0.1,0.3-0.4,0.4-0.6c0.1-0.2-0.7-0.6-0.9-0.6C42.6,24.4,42.2,24.2,41.9,24.8 M41.6,27.3
-                                 c0.2,0.6,0.5,1.3,0.7,1.4c0.1-0.4,0.4-1.3,1.3-1.9c0.2-0.1,0-0.4,0-0.6c0-0.2-0.1-0.5-0.7-0.3C42.2,26.2,41.5,26.9,41.6,27.3
-                                 M43.3,29.3c0.2-0.1,1.1-0.7,1.1-1.6c0-0.5-0.5-0.6-0.6-0.6c-0.3,0-1.1,0.8-1.3,1.7C42.5,29,43.2,29.3,43.3,29.3 M47.9,23
-                                 c-0.2,0.2-0.3,0.3-0.1,0.5c0.2,0.2,0,0.5-0.2,0.8c-0.2,0.3-0.6,0.4-1.2,0.1c-0.5-0.3-1.3-0.4-2,0.2c-0.7,0.6-0.6,1.7-0.5,1.9
-                                 c0.1,0.2,0.8,0.7,0.7,1.2c0,1.4-1.1,2-1.3,2c-0.2,0-0.8-0.4-1-0.6c-0.1-0.1-1.3-1.3-1-3.1c0.3-1.7,1.4-3.1,2.6-3.6
-                                 c1.2-0.5,2.1,0.5,2.2,0.6c0.1,0.1,1.2-0.3,1.5-0.4C47.9,22.6,48,22.7,47.9,23"></path>
-                              <path class="st0" d="M52.9,23.7c0.3,0.2,0.6,0.4,0.2,0.5c-0.3,0.1-0.3,0.1-0.4,0.1c-0.1,0-0.2,0-0.3-0.3
-                                 C52.5,23.5,52.7,23.4,52.9,23.7 M53.8,24.7c0.2,0.5,0.3,0.8-0.1,0.6c-0.4-0.2-0.7-0.1-1.1-0.1c0-0.2-0.1-0.7,0.2-0.8
-                                 C53.4,24.3,53.7,24.2,53.8,24.7 M54,25.7c0.2,0.4-0.3,1.3-0.4,1.4c0-0.3-0.4-0.8-1.1-1.3c-0.1-0.1,0.1-0.4,0.1-0.4
-                                 S53.8,25.3,54,25.7 M53.2,27.6c-0.4,0.3-0.7,0.7-1.3,0.7c0.1-0.2,0.4-1.4,0-1.9c-0.2-0.3,0.2-0.4,0.3-0.5c0.1-0.1,0.7,0.5,0.8,0.7
-                                 C53.2,26.8,53.6,27.3,53.2,27.6 M51.4,28.4c-0.5-0.1-1.2-0.3-1.4-0.4c0.3-0.2,0.9-0.6,1-1.6c0-0.2,0.3-0.1,0.5-0.1
-                                 c0.2,0,0.4,0,0.5,0.6C52,27.6,51.8,28.4,51.4,28.4 M49.2,27.1c0-0.2,0.1-1.1,0.8-1.3c0.4-0.1,0.7,0.4,0.7,0.5
-                                 c0.2,0.3-0.2,1.2-0.8,1.5C49.8,27.9,49.2,27.3,49.2,27.1 M52.2,21.7c-0.1,0.2-0.1,0.3-0.4,0.2c-0.2-0.1-0.4,0.1-0.5,0.3
-                                 c-0.2,0.2,0,0.7,0.4,1.1c0.5,0.4,0.8,1.1,0.6,1.9c-0.2,0.7-1,0.9-1.2,0.8c-0.2-0.1-0.8-0.6-1.2-0.4c-1,0.3-1.1,1.4-1,1.6
-                                 c0,0.2,0.6,0.7,0.8,0.8c0.1,0.1,1.5,1,2.7,0.3c1.2-0.6,1.8-1.8,1.7-3.1c-0.1-1.2-1.2-1.9-1.4-2c-0.1-0.1-0.2-1.2-0.3-1.4
-                                 C52.5,21.6,52.3,21.5,52.2,21.7"></path>
-                              <path class="st0" d="M56.7,30.4c0.2,0,0.5,0,0.3,0.1c-0.1,0.2-0.1,0.2-0.2,0.2c0,0-0.1,0.1-0.3-0.1C56.4,30.6,56.5,30.4,56.7,30.4
-                                 M57.6,30.6c0.3,0.2,0.5,0.2,0.2,0.3c-0.3,0.1-0.4,0.3-0.6,0.4c-0.1-0.1-0.4-0.3-0.2-0.5C57.2,30.5,57.3,30.4,57.6,30.6 M58.1,31
-                                 c0.3,0.1,0.4,0.8,0.4,0.9c-0.1-0.1-0.6-0.2-1.1-0.2c-0.1,0-0.1-0.2-0.1-0.2S57.8,30.9,58.1,31 M58.5,32.3c0,0.3-0.1,0.6-0.3,0.9
-                                 c0-0.2-0.4-0.9-0.8-1c-0.3-0.1-0.1-0.3-0.1-0.4c0-0.1,0.6-0.1,0.7,0C58.2,31.9,58.6,31.9,58.5,32.3 M58,33.4
-                                 c-0.3,0.2-0.7,0.4-0.9,0.4c0.1-0.2,0.2-0.7-0.2-1.2c-0.1-0.1,0.1-0.2,0.2-0.3c0.1-0.1,0.2-0.2,0.5,0.1C58,32.8,58.2,33.3,58,33.4
-                                 M56.3,33.8c-0.1-0.1-0.4-0.6-0.2-1c0.2-0.2,0.5-0.1,0.6-0.1c0.2,0.1,0.4,0.7,0.2,1.1C56.9,33.9,56.4,33.8,56.3,33.8 M55.5,29.7
-                                 c0,0.2,0.1,0.2-0.1,0.2c-0.2,0-0.1,0.2-0.1,0.4c0,0.2,0.3,0.3,0.7,0.4c0.4,0,0.9,0.2,1.1,0.7c0.2,0.5-0.1,0.9-0.3,0.9
-                                 c-0.1,0.1-0.7,0.1-0.8,0.3c-0.4,0.6,0,1.2,0.2,1.2C56.3,34,56.8,34,57,34c0.1,0,1.2-0.2,1.5-1c0.3-0.8,0.1-1.7-0.5-2.3
-                                 c-0.6-0.6-1.4-0.4-1.5-0.4c-0.1,0-0.6-0.5-0.8-0.6C55.6,29.6,55.5,29.6,55.5,29.7"></path>
-                              <path class="st0" d="M42.3,41.2c0,0.2-0.1,0.4,0.1,0.3c0.2-0.1,0.2-0.1,0.3-0.1c0.1,0,0.1-0.1-0.1-0.2C42.4,41,42.3,41,42.3,41.2
-                                 M42.4,42c0.2,0.3,0.3,0.4,0.4,0.2c0.1-0.3,0.3-0.4,0.5-0.5c-0.1-0.1-0.3-0.3-0.6-0.2C42.4,41.7,42.2,41.8,42.4,42 M42.9,42.4
-                                 c0.1,0.2,0.9,0.3,0.9,0.3c-0.1-0.1-0.2-0.5-0.1-1c0-0.1-0.3-0.1-0.3-0.1S42.7,42.2,42.9,42.4 M44.3,42.8c0.4,0,0.7,0,1-0.3
-                                 c-0.2,0-1-0.3-1.1-0.7c-0.1-0.2-0.3-0.1-0.4-0.1c-0.1,0-0.1,0.5,0,0.6C43.9,42.6,43.9,42.9,44.3,42.8 M45.6,42.3
-                                 c0.2-0.3,0.4-0.6,0.5-0.7c-0.2,0-0.8,0.1-1.3-0.2c-0.1-0.1-0.2,0.1-0.3,0.2c-0.1,0.1-0.2,0.2,0.1,0.4
-                                 C44.9,42.3,45.4,42.5,45.6,42.3 M46,40.9c-0.1-0.1-0.7-0.4-1.1-0.1c-0.3,0.1-0.1,0.4-0.1,0.5c0.1,0.2,0.7,0.4,1.2,0.2
-                                 C46.1,41.4,46.1,41,46,40.9 M41.6,40.2c0.2,0,0.2,0.1,0.3-0.1c0-0.1,0.3-0.1,0.4-0.1c0.2,0,0.4,0.2,0.4,0.6c0,0.4,0.2,0.8,0.7,1
-                                 c0.5,0.2,1-0.1,1.1-0.2c0.1-0.1,0.1-0.6,0.4-0.7c0.7-0.3,1.3,0,1.4,0.1c0.1,0.1,0.1,0.5,0,0.7c0,0.1-0.3,1-1.2,1.3
-                                 c-0.9,0.3-1.9,0.1-2.5-0.4c-0.6-0.5-0.4-1.2-0.4-1.3c0-0.1-0.5-0.5-0.7-0.7C41.4,40.3,41.4,40.1,41.6,40.2"></path>
-                              <path class="st0" d="M46.4,37.4L46.4,37.4C46.4,37.4,46.4,37.4,46.4,37.4z M53,37.2c-0.7,0-1.4,0.3-2,0.7c-0.4,0.2-0.7,0.5-1.2,0.3
-                                 c-0.2-0.1-0.5,0-0.8,0c-0.2,0-0.4,0-0.7,0c0-0.3,0.1-0.6-0.3-0.6c0.2-0.5,0.8-0.7,1.1-0.4c0-0.1-0.1-0.2-0.1-0.2
-                                 c-0.3,0-0.6,0.1-0.9,0.2c0.1-0.1,0.2-0.2,0.3-0.3C48,37,47.8,37.5,48,38.1c-0.2-0.2-0.6-0.3-0.5-0.7c0-0.1-0.1-0.2-0.2-0.4
-                                 c0.2-0.3,0.6-0.6,1.1-0.6c-0.3-0.2-0.4-0.2-1.1,0.3c0.1-0.1,0.2-0.2,0.2-0.3c-0.5,0.2-0.5,0.7-0.6,1.1c-0.2-0.1-0.3-0.3-0.2-0.5
-                                 c0-0.1,0-0.3-0.1-0.3c-0.2-0.1-0.1-0.2,0-0.3c0.2-0.2,0.5-0.3,0.7-0.4c0.1-0.1,0.3-0.1,0.3,0.2c0,0,0.1-0.1,0.1-0.1
-                                 c0-0.1-0.1-0.3-0.1-0.3c-0.4-0.2-0.6,0.1-1,0.3c0.1-0.1,0.1-0.2,0.2-0.3c-0.4,0.2-0.6,0.7-0.5,1.2c0,0.1,0,0.3,0,0.5l0,0
-                                 c0,0,0,0,0,0c0,0,0,0,0,0c-0.1,0.3-0.3,0.5-0.6,0.6c-0.1,0-0.2,0.1-0.3,0.2c-0.2,0.2-0.4,0.4-0.6,0.7c0.3,0.3,0.5,0.6,1,0.7
-                                 c0.2,0.4,0.9,0.5,1.2,0.2c0.1-0.2,0.2-0.4,0.3-0.6c0,0.1,0,0.1-0.4,0.9c0.2,0,0.4,0.1,0.6,0c0.9-0.2,1.9-0.3,2.8-0.5
-                                 c0.8-0.2,1.5-0.5,2.1-1c0.2-0.2,0.4-0.4,0.5-0.6c0.1-0.1,0-0.2,0.1-0.3c0,0,0.1,0,0.1-0.1c0.1-0.1,0.1-0.2,0.1-0.3
-                                 C53.2,37.3,53.1,37.2,53,37.2"></path>
-                              <path class="st0" d="M46.6,35.2c0.3-0.2,0.3-0.2,0.5,0.1c0-0.1,0-0.2-0.1-0.3c-0.1-0.1-0.3-0.1-0.4-0.1c-0.2,0.1-0.4,0.3-0.6,0.4
-                                 c-0.1,0.1-0.2,0.2-0.3,0.2c0.1-0.2,0.2-0.3,0.4-0.5c-0.3,0.2-0.5,0.4-0.5,0.7c0.1-0.1,0.3-0.1,0.4-0.2
-                                 C46.2,35.5,46.4,35.3,46.6,35.2"></path>
-                              <path class="st0" d="M45.5,33.1c0.2,0,0.4,0,0.6,0c-0.4-0.3-1-0.1-1.1,0.3c-0.2,0.5-0.4,1.1-0.6,1.6c0,0-0.1,0.1-0.1,0.2
-                                 c0.1-0.5,0.2-1,0.2-1.5c0.1-0.5,0-1,0.1-1.5c0.4,0.1,0.9,0.1,1.3,0.2c0,0,0-0.1-0.1-0.1c-0.1,0-0.3-0.1-0.4-0.1
-                                 c-1-0.2-0.9-0.2-1,0.8c0,0.6-0.2,1.1-0.4,1.6c0-0.9,0-1.8,0-2.7c0.6,0.1,1.2,0,1.7,0.1c0,0,0-0.1-0.1-0.1c-0.5-0.1-1-0.1-1.5-0.1
-                                 c-0.2,0-0.3,0.1-0.4,0.3c0,0.4-0.1,0.9-0.1,1.3c0,0.3,0,0.6,0,0.9c-0.1-0.1-0.2-0.5-0.3-1.2c0-0.5,0-0.9-0.1-1.4
-                                 c0.7-0.1,1.4-0.2,2.1-0.3c0,0,0-0.1,0-0.1c-0.7,0.1-1.4,0.1-2,0.2c0,0,0,0,0,0l0,0c0,0,0,0,0,0c0.1-0.1,0.3-0.2,0.4-0.3
-                                 c-0.1,0-0.1,0-0.2,0c0,0,0.1-0.1,0.1-0.1c-0.3,0.2-0.5,0.4-0.8,0.6c-0.3,0.3-0.4,0.6-0.3,1c0.1,0.3,0.1,0.7,0.2,1.1
-                                 c0,0.1,0.1,0.1,0.1,0.2c-0.9-0.7-1.7-1.4-1.9-2.6c-0.2,0.4,0.2,1.2,1,2.1c-0.2,0-0.3,0-0.5,0c-0.3-0.4-0.5-0.7-1.1-0.8
-                                 c0.3,0.3,0.6,0.5,0.9,0.7c0,0,0,0,0,0.1c-0.3-0.1-0.7-0.2-1-0.3c0,0-0.1-0.1-0.1-0.1c-0.3-0.5-0.6-1.1-0.8-1.6
-                                 c-0.3-0.8-0.9-1.2-1.7-1.5c-0.7-0.3-1.4,0-1.9,0.5c-0.5,0.6-0.8,1.2-0.5,2c0,0,0,0,0,0.1c0.3,1.7,1.5,2.8,2.7,3.8
-                                 c1.5,1.3,3.3,2.4,5,3.5c0,0,0.1,0,0.1,0c-0.4-0.2-0.7-0.5-1.1-0.7c-1.8-1.1-3.6-2.4-5.1-3.9c-0.5-0.5-0.8-1.1-1.2-1.6
-                                 c-0.1-0.1-0.1-0.2-0.2-0.4c1.5,1.7,3.2,3.1,5.1,4.2c-0.2-0.1-0.3-0.2-0.5-0.3c-0.2-0.1-0.3-0.2-0.5-0.3c-1.3-1-2.6-1.9-3.7-3.2
-                                 c-0.6-0.6-0.8-1.3-0.4-2.2c0.4-1,1.7-1.4,2.7-0.8c0.3,0.2,0.6,0.4,0.8,0.7c0.3,0.4,0.5,0.8,0.7,1.3c0,0,0,0.1,0,0.2
-                                 c-0.4-0.2-0.8-0.3-1.2-0.5c0,0,0,0.1-0.1,0.1c0.3,0.2,0.6,0.3,0.9,0.5c0.3,0.2,0.6,0.4,0.7,0.7c-0.4-0.6-1-0.8-1.5-1.1
-                                 c0,0,0,0.1-0.1,0.1c0.2,0.1,0.5,0.3,0.7,0.4c0.2,0.1,0.3,0.3,0.5,0.4c0.1,0.1,0.2,0.3,0.3,0.5c-0.1-0.1-0.2-0.2-0.4-0.3
-                                 c0,0.1-0.1,0.2,0,0.2c0.1,0.1,0.2,0.2,0.3,0.3c-0.3,0.1-0.4-0.1-0.6-0.3c-0.2-0.2-0.4-0.3-0.6-0.5c0,0-0.1,0.1-0.1,0.1
-                                 c0.3,0.4,0.6,0.8,1,1.1c0.8,0.7,1.7,1.3,2.6,1.9c0.2,0.1,0.4,0.2,0.6,0.3c0,0,0,0.1,0.1,0.1c0.3,0.3,0.6,0.6,0.9,1
-                                 c0.2,0.2,0.3,0.4,0.4,0.6c0.5,0.6,0.7,0.6,1.2-0.1c0.1-0.1,0.2-0.2,0.3-0.3c0.2-0.2,0.4-0.4,0.7-0.6c-0.1-0.3-0.3-0.6-0.4-0.9
-                                 c0,0-0.1-0.1-0.1-0.2c0-0.3-0.1-0.4-0.3-0.5c-0.1,0.1-0.1,0.2-0.2,0.3c0,0,0,0-0.1,0c0-0.3-0.1-0.6-0.1-1c0.2-0.3,0.4-0.6,0.6-0.8
-                                 c0.1-0.1,0.2-0.1,0.3-0.1c0-0.2-0.2-0.3-0.4-0.1c-0.2,0.2-0.4,0.4-0.5,0.6c0-0.1-0.1-0.2-0.1-0.4c0,0-0.1,0-0.1,0
-                                 c0,0.4,0,0.9,0,1.3c-0.1,0-0.2-0.1-0.4-0.1c0.2-0.8,0.4-1.5,0.7-2.3C45.3,33.2,45.4,33.1,45.5,33.1"></path>
-                              <path class="st0" d="M37.7,43.7l8.7-0.6l-8.3,2.4C38.1,45.6,37.6,44.8,37.7,43.7z"></path>
-                           </g>
-                        </svg>
-                        <span>Nous-localiser</span>
-                     </a>
+
+<!-- bottom seach option end  -->
+
+
+            <div class="bottom_slider page_clik  d-flex align-items-center single-bottom-slider">
+                 <div class="container">
+                     <div class="col-xs-4 col-sm-4 col-md-4 link_nl">
+                        <a  class="link_shop link_shopp browser-window__link"  href="/restaurants/">
+
+                           <img src="img/header-hover-img1.png" class="svg-img-hover" alt="svg">
+                           <span>Nous-localiser</span>
+                        </a>
+                     </div>
+                     <div class="col-xs-4 col-sm-4 col-md-4 link_click">
+                        <a  class="link_shop link_clikcol browser-window__link">
+                        <img src="img/header-hover-img2.png" class="svg-img-hover" alt="svg">
+                           <span>CLICK&COLLECT</span>
+                        </a>
+                     </div>
+                     <div class="col-xs-4 col-sm-4 col-md-4 link_fvl">
+                        <a  class="link_shop link_liver browser-window__link">
+                         <img src="img/header-hover-img3.png" class="svg-img-hover" alt="svg">
+                           <span>FAITES-VOUS LIVRER</span>
+                        </a>
+                     </div>
                   </div>
-                  <div class="col-xs-4 col-sm-4 col-md-4 link_click">
-                     <a class="link_shop link_clikcol browser-window__link ">
-                        <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 120 120" style="enable-background:new 0 0 120 120;" xml:space="preserve">
-                           <style type="text/css">
-                              .st0{fill:#A5A5A5;stroke:#A5A5A5;stroke-width:0.5;stroke-miterlimit:10;}
-                              .st1{fill:#A5A5A5;}
-                           </style>
-                           <g>
-                              <g>
-                                 <rect x="17.1" y="60.6" class="st0" width="28.4" height="2.1"></rect>
-                                 <rect x="6.6" y="60.6" class="st0" width="4.2" height="2.1"></rect>
-                                 <path class="st0" d="M95.5,25.4l-33.7,0.1l-0.1,0.1c-1.8,0.6-12.2,4.4-12.2,12.4c0,2.7,1.9,3.9,3.8,3.9h4.5l-0.1,0.3l-3,10.2H32.8
-                                    v2.1h21.4l-1.3,6.9l2.1,0.4l5.8-24.7l0.9,55.4H51.5l1.8-21.7l-0.5-1l-0.6-0.2H21.2v2.1h29.8l-2,22.8h64.3L95.5,25.4z M56.1,39.8
-                                    c0.4-0.8,0.7-1.7,0.8-2.4h1.7l-0.4,2.4H56.1z M59,35.3h-3L55,36.2c-0.2,1.5-0.9,3.6-1.7,3.6c-1.1,0-1.7-0.6-1.7-1.7
-                                    c0-5.2,6-8.4,9.1-9.8L59,35.3z M63.9,92.5L63,42.9l0.1-15.3l31-0.1l16.8,64.9H63.9z"></path>
-                                 <rect x="12.6" y="69.6" class="st0" width="4.4" height="2.1"></rect>
-                                 <rect x="24.1" y="52.4" class="st0" width="5.2" height="2.1"></rect>
-                              </g>
-                              <g>
-                                 <path class="st1" d="M67.5,69.7L85,64.9c0,0,0.6-0.2,0.7-0.1C85.8,64.8,85,65,85,65l-17.3,5.3C67.7,70.4,67.4,70.3,67.5,69.7z"></path>
-                                 <path class="st1" d="M100.7,70.6l-17.9-3c0,0-0.6-0.1-0.7-0.2s0.7,0,0.7,0l17.9,2.4C100.7,69.9,101,70.1,100.7,70.6z"></path>
-                                 <path class="st1" d="M77.8,67.7l8.1-2.6c0,0,0.1-0.1,0.1-0.1c0.1,0,5.1-0.3,5.1-0.3s-0.2,1.9-1.4,3.4c-1.5-0.2-7.3-1-7.3-1
-                                    s-0.6-0.2-0.7,0.3c-0.1,0.5,0.6,0.7,0.8,0.7c0.2,0,6.3,1.1,6.3,1.1s-1.6,1.6-4.7,1.7C80.8,70.8,78.6,68.8,77.8,67.7z"></path>
-                                 <path class="st1" d="M89,61.1c0,0.2,0.2,0.7,0.7,0.6c0,0,0.1-0.7,0.3-1c0.1-0.3,0.3-1.3,0.2-1.8l-0.4,0
-                                    C89.7,58.9,89.9,61.1,89,61.1"></path>
-                                 <path class="st1" d="M87.6,62.3c0.6-0.7,0.2,0.1,0.1,0.1c0,0.1-1.6,1.8-2.4,1.5C85.4,63.7,86.4,63.6,87.6,62.3 M83.4,64.9l2.1-0.6
-                                    c0,0,0.1,0,0.1,0c0.1,0,0.1,0,0.2,0c0.2,0.1,0.3,0.2,0.3,0.4c0,0.1,0,0.1,0,0.1c1-0.2,2.1-0.7,3.1-1.6c1-0.9,0.6-1.5,0.6-1.5
-                                    c-0.1,0-0.3,0.1-0.6-0.1c-0.4-0.2-0.4-0.7-0.4-0.7c-0.5,0-2,1.5-2.9,2.2c-0.9,0.7-2.9,0.8-2.9,1.1C82.8,64.6,83,64.8,83.4,64.9"></path>
-                                 <path class="st1" d="M84.6,57.6c-0.1,0-0.1-0.1-0.1-0.1c-0.5-0.3-0.9-0.5-1.4-0.8c0,0-0.1,0-0.1-0.1c-0.2-0.1-0.3,0-0.3,0.1
-                                    c-0.1,0.2-0.1,0.4-0.2,0.6c0,0.1,0,0.2,0.2,0.2c0,0,0,0,0.1,0C83.4,57.7,84,57.7,84.6,57.6C84.6,57.6,84.6,57.6,84.6,57.6"></path>
-                                 <path class="st1" d="M84.7,58C84.7,58,84.6,58,84.7,58c-0.6,0.3-1,0.6-1.5,0.9c-0.3,0.2-0.3,0.3-0.1,0.5c0.1,0.1,0.2,0.2,0.4,0.3
-                                    c0.1,0.1,0.2,0.1,0.2,0c0,0,0.1-0.1,0.1-0.1C84.1,59,84.4,58.5,84.7,58C84.7,58,84.7,58,84.7,58"></path>
-                                 <path class="st1" d="M84.8,58c0,0.1,0,0.1-0.1,0.1c-0.3,0.5-0.6,1-0.8,1.4c-0.2,0.3-0.2,0.4,0.2,0.5c0.2,0,0.3,0.1,0.5,0.1
-                                    c0.1,0,0.2,0,0.2-0.1c0,0,0-0.1,0-0.1C84.8,59.3,84.8,58.7,84.8,58C84.9,58.1,84.8,58.1,84.8,58"></path>
-                                 <path class="st1" d="M84.6,57.8c-0.6,0-1.2,0-1.8,0c-0.2,0-0.3,0.1-0.2,0.3c0,0.2,0.1,0.4,0.2,0.6c0,0.1,0.1,0.2,0.2,0.1
-                                    c0,0,0,0,0,0C83.5,58.5,84.1,58.1,84.6,57.8C84.6,57.8,84.6,57.8,84.6,57.8"></path>
-                                 <path class="st1" d="M85,58c0,0.1,0,0.3,0,0.4c0,0.5,0,0.9,0,1.4c0,0,0,0.1,0,0.1c0,0.1,0.1,0.1,0.2,0.1c0.2-0.1,0.5-0.1,0.7-0.2
-                                    c0.1,0,0.1-0.1,0.1-0.2c0,0,0-0.1,0-0.1C85.6,59.1,85.3,58.6,85,58C85,58,85,58,85,58"></path>
-                                 <path class="st1" d="M85.1,57.9c0.1,0.2,0.2,0.3,0.3,0.5c0.2,0.4,0.4,0.7,0.6,1.1c0,0,0,0.1,0.1,0.1c0.1,0.1,0.1,0.1,0.2,0
-                                    c0.2-0.2,0.3-0.3,0.5-0.5c0.1-0.1,0.1-0.1,0-0.2c0,0-0.1-0.1-0.1-0.1C86.2,58.6,85.7,58.3,85.1,57.9C85.2,58,85.2,58,85.1,57.9"></path>
-                                 <path class="st1" d="M85.1,60.5c-0.5,0-1.1-0.1-1.6-0.4c-1.3-0.8-1.7-2.4-1-3.7l0,0l0,0c0,0,0.1,0,0.1,0.1
-                                    c0.1,0.1,0.1,0.1,0.4,0.3l0,0c-0.2-0.1-0.3-0.2-0.4-0.3c0,0-0.1,0-0.1-0.1c-0.7,1.3-0.3,2.9,1,3.7c1.3,0.7,2.9,0.3,3.7-0.9
-                                    c0,0-0.1,0-0.1,0c-0.1,0-0.2-0.1-0.5-0.2l0,0c0.2,0.1,0.4,0.1,0.4,0.2c0.1,0,0.1,0,0.2,0.1l0,0l0,0C86.8,60,85.9,60.4,85.1,60.5z"></path>
-                                 <path class="st1" d="M81.7,53.4c-0.2-0.1-0.3-0.3-0.3,0c0,0.2,0,0.3,0,0.3c0,0.1,0,0.2,0.2,0.1C81.8,53.7,81.8,53.5,81.7,53.4
-                                    M80.9,53.1c-0.3,0-0.5,0-0.3,0.2c0.2,0.2,0.2,0.5,0.2,0.7c0.1-0.1,0.4-0.1,0.4-0.4C81.2,53.2,81.2,53,80.9,53.1 M80.3,53.3
-                                    c-0.3,0-0.7,0.6-0.7,0.7c0.2-0.1,0.5,0,0.9,0.4c0.1,0.1,0.2-0.2,0.2-0.2S80.6,53.3,80.3,53.3 M79.4,54.3c-0.1,0.3-0.3,0.7-0.2,1.1
-                                    c0.1-0.1,0.7-0.7,1.1-0.6c0.2,0.1,0.2-0.2,0.2-0.3c0-0.1-0.4-0.3-0.5-0.4C79.8,54.1,79.5,54,79.4,54.3 M79.2,55.9
-                                    c0.1,0.3,0.3,0.7,0.4,0.8c0.1-0.2,0.2-0.8,0.7-1.1c0.1-0.1,0-0.2,0-0.4c0-0.1-0.1-0.3-0.4-0.2C79.5,55.2,79.1,55.6,79.2,55.9
-                                    M80.2,57c0.1,0,0.6-0.4,0.6-1c0-0.3-0.3-0.4-0.4-0.4c-0.2,0-0.6,0.5-0.8,1C79.7,56.8,80.1,57,80.2,57 M82.9,53.3
-                                    c-0.1,0.1-0.2,0.2,0,0.3c0.1,0.1,0,0.3-0.1,0.5c-0.1,0.2-0.4,0.2-0.7,0c-0.3-0.2-0.8-0.2-1.2,0.1c-0.4,0.4-0.4,1-0.3,1.1
-                                    c0.1,0.1,0.4,0.4,0.4,0.7c0,0.8-0.6,1.2-0.8,1.2c-0.1,0-0.5-0.2-0.6-0.3c-0.1-0.1-0.8-0.8-0.6-1.8c0.2-1,0.8-1.8,1.5-2.1
-                                    c0.7-0.3,1.2,0.3,1.3,0.4c0.1,0.1,0.7-0.2,0.9-0.3C82.9,53,83,53.1,82.9,53.3"></path>
-                                 <path class="st1" d="M85.9,53.7c0.2,0.1,0.3,0.3,0.1,0.3c-0.2,0-0.2,0.1-0.2,0.1c-0.1,0-0.1,0-0.1-0.2
-                                    C85.6,53.6,85.7,53.6,85.9,53.7 M86.4,54.3c0.1,0.3,0.2,0.5-0.1,0.4c-0.2-0.1-0.4-0.1-0.6-0.1c0-0.1-0.1-0.4,0.1-0.5
-                                    C86.2,54.1,86.3,54,86.4,54.3 M86.5,54.9c0.1,0.2-0.2,0.7-0.2,0.8c0-0.2-0.2-0.5-0.6-0.7c-0.1,0,0.1-0.2,0.1-0.2
-                                    S86.4,54.7,86.5,54.9 M86,56c-0.2,0.2-0.4,0.4-0.7,0.4c0.1-0.1,0.3-0.8,0-1.1c-0.1-0.2,0.1-0.2,0.2-0.3c0.1-0.1,0.4,0.3,0.5,0.4
-                                    C86,55.6,86.2,55.8,86,56 M85,56.5c-0.3,0-0.7-0.2-0.8-0.2c0.2-0.1,0.5-0.4,0.6-0.9c0-0.1,0.2-0.1,0.3-0.1c0.1,0,0.2,0,0.3,0.4
-                                    C85.3,56,85.2,56.5,85,56.5 M83.7,55.7c0-0.1,0.1-0.7,0.5-0.8c0.2-0.1,0.4,0.2,0.4,0.3c0.1,0.2-0.1,0.7-0.5,0.9
-                                    C84,56.2,83.7,55.8,83.7,55.7 M85.4,52.5c-0.1,0.1-0.1,0.2-0.2,0.1c-0.1-0.1-0.2,0.1-0.3,0.2c-0.1,0.1,0,0.4,0.3,0.7
-                                    c0.3,0.3,0.5,0.7,0.4,1.1c-0.1,0.4-0.6,0.5-0.7,0.5c-0.1,0-0.5-0.3-0.7-0.2c-0.6,0.2-0.6,0.8-0.6,0.9c0,0.1,0.4,0.4,0.5,0.5
-                                    c0.1,0.1,0.9,0.6,1.6,0.2c0.7-0.4,1.1-1.1,1-1.8c-0.1-0.7-0.7-1.1-0.8-1.2c-0.1-0.1-0.1-0.7-0.1-0.9
-                                    C85.6,52.5,85.5,52.4,85.4,52.5"></path>
-                                 <path class="st1" d="M88.1,57.7c0.1,0,0.3,0,0.2,0.1c-0.1,0.1-0.1,0.1-0.1,0.1c0,0-0.1,0.1-0.2,0C87.9,57.8,88,57.7,88.1,57.7
-                                    M88.6,57.8c0.2,0.1,0.3,0.1,0.1,0.2c-0.2,0.1-0.3,0.2-0.3,0.2c-0.1-0.1-0.2-0.2-0.1-0.3C88.4,57.7,88.4,57.7,88.6,57.8 M88.9,58
-                                    c0.2,0.1,0.2,0.5,0.2,0.5c-0.1-0.1-0.3-0.1-0.6-0.1c0,0,0-0.1,0-0.1S88.8,57.9,88.9,58 M89.2,58.8c0,0.2,0,0.4-0.2,0.5
-                                    c0-0.1-0.2-0.5-0.5-0.6c-0.2,0-0.1-0.2,0-0.2c0-0.1,0.3,0,0.4,0C89,58.5,89.2,58.6,89.2,58.8 M88.8,59.5c-0.2,0.1-0.4,0.2-0.5,0.2
-                                    c0-0.1,0.1-0.4-0.1-0.7c0-0.1,0.1-0.1,0.1-0.2c0,0,0.1-0.1,0.3,0.1C88.8,59.1,89,59.4,88.8,59.5 M87.9,59.6
-                                    c-0.1,0-0.3-0.4-0.1-0.6c0.1-0.1,0.3-0.1,0.3-0.1c0.1,0,0.2,0.4,0.1,0.7C88.2,59.7,87.9,59.7,87.9,59.6 M87.4,57.3
-                                    c0,0.1,0,0.1-0.1,0.1c-0.1,0-0.1,0.1-0.1,0.2c0,0.1,0.2,0.2,0.4,0.2c0.2,0,0.5,0.1,0.7,0.4c0.1,0.3-0.1,0.5-0.2,0.6
-                                    c-0.1,0-0.4,0-0.4,0.2c-0.2,0.4,0,0.7,0.1,0.7c0.1,0,0.4,0,0.5,0c0.1,0,0.7-0.1,0.9-0.6c0.2-0.5,0.1-1-0.3-1.3
-                                    c-0.3-0.3-0.8-0.2-0.9-0.2c-0.1,0-0.4-0.3-0.4-0.4C87.5,57.2,87.4,57.2,87.4,57.3"></path>
-                                 <path class="st1" d="M79.6,64c0,0.1,0,0.2,0.1,0.2c0.1-0.1,0.1-0.1,0.2-0.1c0,0,0.1,0,0-0.1C79.7,63.9,79.6,63.9,79.6,64
-                                    M79.7,64.5c0.1,0.2,0.1,0.3,0.2,0.1c0.1-0.1,0.2-0.2,0.3-0.3c-0.1,0-0.2-0.2-0.3-0.1C79.6,64.3,79.6,64.3,79.7,64.5 M79.9,64.8
-                                    c0.1,0.1,0.5,0.2,0.6,0.2c-0.1-0.1-0.1-0.3-0.1-0.6c0,0-0.2,0-0.2,0S79.9,64.6,79.9,64.8 M80.8,65c0.2,0,0.4,0,0.6-0.2
-                                    c-0.1,0-0.6-0.2-0.6-0.4c0-0.1-0.2,0-0.2,0c-0.1,0-0.1,0.3,0,0.4C80.5,64.8,80.5,65,80.8,65 M81.6,64.7c0.1-0.1,0.3-0.4,0.3-0.4
-                                    c-0.1,0-0.5,0.1-0.8-0.1c-0.1,0-0.1,0.1-0.2,0.1c-0.1,0-0.1,0.1,0.1,0.3C81.1,64.7,81.4,64.8,81.6,64.7 M81.8,63.9
-                                    c0,0-0.4-0.2-0.7-0.1c-0.2,0.1-0.1,0.3-0.1,0.3c0,0.1,0.4,0.2,0.7,0.1C81.9,64.2,81.8,63.9,81.8,63.9 M79.2,63.4
-                                    c0.1,0,0.1,0,0.2-0.1c0-0.1,0.1-0.1,0.3-0.1c0.1,0,0.2,0.1,0.2,0.4c0,0.2,0.1,0.5,0.4,0.6c0.3,0.1,0.6-0.1,0.6-0.1
-                                    c0-0.1,0.1-0.3,0.2-0.4c0.4-0.2,0.8,0,0.8,0.1c0.1,0.1,0,0.3,0,0.4c0,0.1-0.2,0.6-0.7,0.8c-0.6,0.2-1.1,0.1-1.5-0.2
-                                    c-0.3-0.3-0.2-0.7-0.2-0.8c0-0.1-0.3-0.3-0.4-0.4C79,63.5,79.1,63.4,79.2,63.4"></path>
-                                 <path class="st1" d="M82,61.8L82,61.8C82,61.8,82,61.8,82,61.8z M85.9,61.7c-0.4,0-0.8,0.2-1.2,0.4c-0.2,0.1-0.4,0.3-0.7,0.2
-                                    c-0.1,0-0.3,0-0.5,0c-0.1,0-0.3,0-0.4,0c0-0.2,0.1-0.3-0.2-0.4c0.1-0.3,0.5-0.4,0.6-0.2c0,0-0.1-0.1-0.1-0.1c-0.2,0-0.4,0-0.5,0.1
-                                    c0.1-0.1,0.1-0.1,0.2-0.2c-0.3,0.1-0.4,0.3-0.3,0.7c-0.1-0.1-0.3-0.2-0.3-0.4c0-0.1,0-0.1-0.1-0.2c0.1-0.2,0.3-0.3,0.6-0.3
-                                    c-0.2-0.1-0.2-0.1-0.6,0.2c0.1-0.1,0.1-0.1,0.1-0.2c-0.3,0.1-0.3,0.4-0.3,0.6c-0.1-0.1-0.2-0.2-0.1-0.3c0-0.1,0-0.2,0-0.2
-                                    c-0.1-0.1-0.1-0.1,0-0.2c0.1-0.1,0.3-0.2,0.4-0.3c0.1,0,0.2-0.1,0.2,0.1c0,0,0,0,0.1-0.1c0-0.1,0-0.2-0.1-0.2
-                                    c-0.2-0.1-0.4,0.1-0.6,0.2c0.1-0.1,0.1-0.1,0.1-0.2c-0.2,0.1-0.4,0.4-0.3,0.7c0,0.1,0,0.2,0,0.3l0,0c0,0,0,0,0,0c0,0,0,0,0,0
-                                    c0,0.2-0.2,0.3-0.4,0.4c-0.1,0-0.1,0.1-0.2,0.1c-0.1,0.1-0.2,0.2-0.3,0.4c0.2,0.2,0.3,0.4,0.6,0.4c0.1,0.2,0.5,0.3,0.7,0.1
-                                    c0.1-0.1,0.1-0.2,0.2-0.3c0,0.1,0,0.1-0.2,0.5c0.1,0,0.2,0,0.3,0c0.6-0.1,1.1-0.2,1.7-0.3c0.5-0.1,0.9-0.3,1.3-0.6
-                                    c0.1-0.1,0.2-0.2,0.3-0.3c0,0,0-0.1,0-0.2c0,0,0,0,0.1,0c0,0,0.1-0.1,0.1-0.2C86,61.7,86,61.7,85.9,61.7"></path>
-                                 <path class="st1" d="M82.1,60.5c0.2-0.1,0.2-0.1,0.3,0.1c0-0.1,0-0.1-0.1-0.2c-0.1,0-0.2-0.1-0.2,0c-0.1,0.1-0.3,0.2-0.4,0.3
-                                    c-0.1,0-0.1,0.1-0.2,0.1c0.1-0.1,0.1-0.2,0.2-0.3c-0.2,0.1-0.3,0.2-0.3,0.4c0.1,0,0.2-0.1,0.2-0.1C81.9,60.7,82,60.6,82.1,60.5"></path>
-                                 <path class="st1" d="M81.5,59.2c0.1,0,0.2,0,0.4,0c-0.3-0.2-0.6-0.1-0.7,0.2c-0.1,0.3-0.2,0.6-0.4,1c0,0,0,0.1-0.1,0.1
-                                    c0.1-0.3,0.1-0.6,0.1-0.9c0-0.3,0-0.6,0-0.9c0.3,0,0.5,0.1,0.7,0.1c0,0,0,0,0-0.1c-0.1,0-0.2,0-0.3-0.1c-0.6-0.1-0.6-0.1-0.6,0.4
-                                    c0,0.3-0.1,0.7-0.2,1c0-0.5,0-1,0-1.6c0.4,0.1,0.7,0,1,0.1c0,0,0-0.1,0-0.1c-0.3,0-0.6-0.1-0.9-0.1c-0.1,0-0.2,0-0.2,0.2
-                                    c0,0.3,0,0.5,0,0.8c0,0.2,0,0.3,0,0.5c-0.1-0.1-0.1-0.3-0.2-0.7c0-0.3,0-0.5,0-0.8c0.4-0.1,0.8-0.1,1.2-0.2c0,0,0-0.1,0-0.1
-                                    c-0.4,0-0.8,0.1-1.2,0.1c0,0,0,0,0,0l0,0c0,0,0,0,0,0c0.1-0.1,0.2-0.1,0.3-0.2c0,0-0.1,0-0.1,0c0,0,0-0.1,0.1-0.1
-                                    c-0.2,0.1-0.3,0.2-0.5,0.4c-0.2,0.1-0.2,0.3-0.2,0.6c0,0.2,0.1,0.4,0.1,0.6c0,0,0.1,0.1,0.1,0.1c-0.5-0.4-1-0.8-1.1-1.5
-                                    c-0.1,0.2,0.1,0.7,0.6,1.3c-0.1,0-0.2,0-0.3,0c-0.1-0.2-0.3-0.4-0.6-0.5c0.2,0.1,0.4,0.3,0.5,0.4c0,0,0,0,0,0
-                                    c-0.2-0.1-0.4-0.1-0.6-0.2c0,0,0,0-0.1-0.1c-0.2-0.3-0.3-0.6-0.5-1c-0.2-0.5-0.5-0.7-1-0.9c-0.4-0.1-0.8,0-1.1,0.3
-                                    c-0.3,0.3-0.5,0.7-0.3,1.2c0,0,0,0,0,0c0.2,1,0.9,1.6,1.6,2.3c0.9,0.8,1.9,1.4,3,2.1c0,0,0,0,0.1,0c-0.2-0.1-0.4-0.3-0.7-0.4
-                                    c-1.1-0.7-2.1-1.4-3-2.3c-0.3-0.3-0.5-0.6-0.7-0.9c0-0.1-0.1-0.1-0.1-0.2c0.9,1,1.9,1.8,3,2.5c-0.1-0.1-0.2-0.1-0.3-0.2
-                                    c-0.1-0.1-0.2-0.1-0.3-0.2c-0.8-0.6-1.5-1.1-2.2-1.9c-0.3-0.4-0.5-0.8-0.3-1.3c0.2-0.6,1-0.8,1.6-0.5c0.2,0.1,0.3,0.3,0.4,0.4
-                                    c0.2,0.2,0.3,0.5,0.4,0.7c0,0,0,0.1,0,0.1c-0.2-0.1-0.5-0.2-0.7-0.3c0,0,0,0.1,0,0.1c0.2,0.1,0.3,0.2,0.5,0.3
-                                    c0.2,0.1,0.3,0.2,0.4,0.4c-0.2-0.3-0.6-0.5-0.9-0.7c0,0,0,0,0,0.1c0.1,0.1,0.3,0.2,0.4,0.2c0.1,0.1,0.2,0.2,0.3,0.2
-                                    c0.1,0.1,0.1,0.2,0.2,0.3c-0.1,0-0.1-0.1-0.2-0.1c0,0,0,0.1,0,0.1c0.1,0.1,0.1,0.1,0.2,0.2c-0.2,0-0.3-0.1-0.4-0.2
-                                    c-0.1-0.1-0.2-0.2-0.4-0.3c0,0,0,0,0,0c0.2,0.2,0.4,0.5,0.6,0.7c0.5,0.4,1,0.8,1.6,1.1c0.1,0.1,0.3,0.1,0.4,0.2c0,0,0,0.1,0,0.1
-                                    c0.2,0.2,0.4,0.4,0.5,0.6c0.1,0.1,0.2,0.2,0.2,0.3c0.3,0.4,0.4,0.4,0.7-0.1c0-0.1,0.1-0.1,0.2-0.1c0.1-0.1,0.3-0.2,0.4-0.3
-                                    c-0.1-0.2-0.2-0.3-0.3-0.5c0,0,0-0.1,0-0.1c0-0.2-0.1-0.2-0.2-0.3c0,0.1-0.1,0.1-0.1,0.2c0,0,0,0,0,0c0-0.2-0.1-0.4-0.1-0.6
-                                    c0.1-0.1,0.2-0.3,0.3-0.5c0,0,0.1-0.1,0.2-0.1c0-0.1-0.1-0.2-0.2,0c-0.1,0.1-0.2,0.2-0.3,0.3c0-0.1-0.1-0.1-0.1-0.2c0,0,0,0-0.1,0
-                                    c0,0.3,0,0.5,0,0.8c0,0-0.1,0-0.2-0.1c0.1-0.4,0.3-0.9,0.4-1.3C81.4,59.3,81.4,59.2,81.5,59.2"></path>
-                                 <path class="st1" d="M76.9,65.5l5.1-0.3l-4.9,1.4C77.2,66.6,76.8,66.1,76.9,65.5z"></path>
-                              </g>
-                           </g>
-                        </svg>
-                        <span>CLICK&amp;COLLECT</span> 
-                     </a>
-                  </div>
-                  <div class="col-xs-4 col-sm-4 col-md-4 link_fvl">
-                     <a class="link_shop link_liver browser-window__link  ">
-                        <svg version="1.1" id="Calque_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 120 120" style="enable-background:new 0 0 120 120;" xml:space="preserve">
-                           <style type="text/css">
-                              .st0{fill:#A5A5A5;stroke:#A5A5A5;stroke-width:0.25;stroke-miterlimit:10;}
-                              .st1{fill:#A5A5A5;}
-                           </style>
-                           <g>
-                              <g>
-                                 <path class="st0" d="M99.1,89.3c3.9,0,7.1-3.2,7.1-7.1c0-3.9-3.2-7.1-7.1-7.1S92,78.3,92,82.2l0,0C92,86.1,95.2,89.3,99.1,89.3
-                                    C99.1,89.3,99.1,89.3,99.1,89.3z M99.1,87.3c-2.8,0-5.1-2.3-5.1-5.1c0-2.8,2.3-5.1,5.1-5.1c2.8,0,5.1,2.3,5.1,5.1l0,0
-                                    C104.2,85,101.9,87.3,99.1,87.3z"></path>
-                                 <path class="st0" d="M38.2,89.2c4.8,0,8.7-3.9,8.7-8.7s-3.9-8.7-8.7-8.7s-8.7,3.9-8.7,8.7l0,0C29.6,85.3,33.4,89.1,38.2,89.2z
-                                    M31.6,80.6c0-3.7,3-6.6,6.6-6.6c3.7,0,6.6,3,6.6,6.6c0,3.6-2.9,6.6-6.5,6.6c0,0-0.1,0-0.1,0C38.2,87.2,31.6,87.2,31.6,80.6z"></path>
-                                 <path class="st0" d="M38.3,84.6c2.2,0,4.1-1.8,4.1-4.1s-1.8-4.1-4.1-4.1s-4.1,1.8-4.1,4.1l0,0c0,2.2,1.7,4,4,4.1
-                                    C38.2,84.6,38.3,84.6,38.3,84.6z M38.2,82.6c-1.1,0-2-0.9-2-2c0-1.1,0.9-2,2-2s2,0.9,2,2l0,0C40.2,81.7,39.3,82.6,38.2,82.6
-                                    C38.2,82.6,38.2,82.6,38.2,82.6z"></path>
-                                 <circle class="st0" cx="99.1" cy="82.2" r="2.3"></circle>
-                                 <path class="st0" d="M99.2,68.8c0.4-0.4,0.4-1,0-1.4c-0.4-0.4-1-0.4-1.4,0c-0.5,0.6-1.1,1.1-1.7,1.7l-7.2-23.4l4.8-2.3
-                                    c0.5-0.3,0.7-0.9,0.5-1.4c-0.1-0.4-0.6-0.5-1-0.5L18.1,30.7c-0.3,0-0.6,0.1-0.9,0.4c-0.3,0.3-0.4,0.7-0.3,1l1.4,4.6
-                                    c0.2,0.3,0.4,0.5,0.8,0.6v33h-4.3c-0.6,0-1,0.5-1,1c0,0.6,0.5,1,1,1c0,0,0,0,0,0h11.4l-2,9.3c-0.1,0.6,0.2,1.1,0.8,1.3h0.3
-                                    c0.5,0,0.9-0.3,1-0.8L29,69.4h17.6l3.1,12.7c0.2,0.4,0.6,0.7,1,0.8h34.1C85,82.8,96.1,72.3,99.2,68.8z M49.4,72.8h15
-                                    c0.5,0,0.9-0.3,1-0.8h9c0.5,0,0.9-0.3,1-0.8l1.3-5.3c0.1-0.3,0.1-0.6-0.1-0.9c-0.2-0.2-0.5-0.4-0.8-0.4H65.3V43.1l12.1,1.5
-                                    l7.9,11.8l-1,5.6L82,59.7c-0.2-0.1-0.5-0.2-0.8-0.3H76c-0.6,0-1,0.5-1,1c0,0.6,0.5,1,1,1h4.8l3.1,3.1l-1.9,10.1
-                                    c-0.8,0.1-2.2,0.4-4.8,1c-0.5,0.2-0.9,0.7-0.8,1.3c0.2,0.4,0.6,0.7,1,0.8h0.3c1.5-0.4,3.1-0.6,4.1-0.9l-0.8,3.9H51.4L49.4,72.8z
-                                    M65.5,70v-3.3h9.3l-0.8,3.2h-8.4C65.5,69.9,65.5,69.9,65.5,70z M63.5,70.6H49.1l-0.4-1.4h11.3c0.3,0,0.6,0,0.8-0.3
-                                    c0.2-0.2,0.2-0.5,0.3-0.8v-3.6h2.4L63.5,70.6z M44.7,62.7H21.4v-4.8c0.8,0.1,1.5,0.4,2.2,0.9c1.2,0.8,2.7,1.3,4.2,1.3
-                                    c1.5,0,3-0.4,4.2-1.3c0.9-0.7,2-1.1,3.2-1c1.1,0,2.3,0.4,3.2,1c1.2,0.8,2.7,1.3,4.2,1.3c1.5,0,3-0.4,4.2-1.3c0.9-0.7,2-1.1,3.2-1
-                                    c1.1,0,2.3,0.4,3.2,1c1.2,0.8,2.7,1.3,4.2,1.3c1.5,0,3-0.4,4.2-1.3c0.7-0.4,1.4-0.7,2.2-0.9v4.7h-3.6c0,0-0.6,0-0.8,0.3
-                                    c-0.2,0.2-0.2,0.5-0.3,0.8v3.6H47.9C46.4,65.4,44.7,62.7,44.7,62.7z M21.1,37.5l42.2,5.2v13.1c-1.1,0.2-2.2,0.6-3.2,1.3
-                                    c-0.9,0.7-2,1.1-3.2,1c-1.1,0-2.3-0.4-3.2-1c-1.2-0.8-2.7-1.3-4.2-1.3c-1.5,0-3,0.4-4.2,1.3c-0.9,0.7-2,1.1-3.2,1
-                                    c-1.1,0-2.3-0.4-3.2-1c-1.2-0.8-2.7-1.3-4.2-1.3c-1.5,0-3,0.4-4.2,1.3c-0.9,0.7-2,1.1-3.2,1c-1.1,0-2.3-0.4-3.2-1
-                                    c-0.9-0.7-2-1.2-3.2-1.3L21.1,37.5z M21.1,70.2v-5.5h22.6c0.3,0.5,0.8,1.4,1.4,2.4H28.3c-0.5,0-0.9,0.3-1,0.8l-0.5,2.3L21.1,70.2z
-                                    M19.4,33L90,43.1l-1.7,0.7c-0.1,0-68.2-8.5-68.2-8.5L19.4,33z M94.5,70.8c-3.8,3.8-9,8.8-10.3,10H83l0.9-4.8l3.7-19.5
-                                    c0.1-0.1-7.3-11.6-7.3-11.6l6.6,0.8L94.5,70.8z"></path>
-                              </g>
-                              <g>
-                                 <path class="st1" d="M33.2,51l8.8-1.8c0,0,0.3-0.1,0.4,0c0,0-0.3,0.1-0.3,0.1l-8.7,2C33.3,51.4,33.1,51.3,33.2,51z"></path>
-                                 <path class="st1" d="M49.5,52.6l-8.7-2.1c0,0-0.3-0.1-0.3-0.1c0-0.1,0.3,0,0.3,0l8.7,1.8C49.5,52.2,49.6,52.3,49.5,52.6z"></path>
-                                 <path class="st1" d="M38.3,50.4l4-1c0,0,0.1,0,0.1-0.1c0.1,0,2.5,0,2.5,0s-0.2,0.9-0.8,1.6c-0.7-0.1-3.6-0.7-3.6-0.7
-                                    s-0.3-0.1-0.4,0.1c-0.1,0.2,0.3,0.3,0.3,0.4c0.1,0,3.1,0.7,3.1,0.7s-0.8,0.7-2.4,0.7C39.7,52,38.7,50.9,38.3,50.4z"></path>
-                                 <path class="st1" d="M44,47.5c0,0.1,0.1,0.3,0.3,0.3c0,0,0.1-0.3,0.2-0.5c0.1-0.1,0.2-0.6,0.1-0.9l-0.2,0
-                                    C44.5,46.4,44.5,47.5,44,47.5"></path>
-                                 <path class="st1" d="M43.3,48C43.6,47.7,43.4,48.1,43.3,48c0,0.1-0.8,0.9-1.2,0.7C42.2,48.7,42.7,48.6,43.3,48 M41.2,49.2l1.1-0.2
-                                    c0,0,0,0,0,0c0,0,0.1,0,0.1,0c0.1,0,0.1,0.1,0.1,0.2c0,0,0,0,0,0.1c0.5-0.1,1.1-0.3,1.6-0.7c0.5-0.4,0.4-0.7,0.4-0.7
-                                    c0,0-0.1,0-0.3-0.1c-0.2-0.1-0.2-0.4-0.2-0.4c-0.3,0-1,0.7-1.5,1c-0.5,0.3-1.4,0.3-1.5,0.4C40.9,49,41,49.1,41.2,49.2"></path>
-                                 <path class="st1" d="M42,45.7C42,45.6,42,45.6,42,45.7c-0.3-0.2-0.5-0.3-0.7-0.5c0,0,0,0-0.1,0c-0.1,0-0.1,0-0.2,0.1
-                                    c0,0.1-0.1,0.2-0.1,0.3c0,0.1,0,0.1,0.1,0.1c0,0,0,0,0,0C41.4,45.6,41.7,45.6,42,45.7C42,45.7,42,45.7,42,45.7"></path>
-                                 <path class="st1" d="M42,45.8C42,45.8,42,45.8,42,45.8c-0.3,0.1-0.5,0.3-0.8,0.4c-0.2,0.1-0.2,0.1-0.1,0.3c0,0.1,0.1,0.1,0.2,0.2
-                                    c0,0,0.1,0,0.1,0c0,0,0,0,0,0C41.7,46.3,41.9,46.1,42,45.8C42,45.8,42,45.8,42,45.8"></path>
-                                 <path class="st1" d="M42.1,45.8C42.1,45.9,42.1,45.9,42.1,45.8c-0.2,0.3-0.3,0.5-0.5,0.7c-0.1,0.2-0.1,0.2,0.1,0.3
-                                    c0.1,0,0.1,0,0.2,0.1c0,0,0.1,0,0.1-0.1c0,0,0,0,0-0.1C42,46.5,42.1,46.2,42.1,45.8C42.1,45.9,42.1,45.9,42.1,45.8"></path>
-                                 <path class="st1" d="M42,45.7c-0.3,0-0.6,0-0.9-0.1c-0.1,0-0.1,0-0.1,0.1c0,0.1,0,0.2,0.1,0.3c0,0.1,0.1,0.1,0.1,0.1c0,0,0,0,0,0
-                                    C41.4,46,41.7,45.9,42,45.7C42,45.7,42,45.7,42,45.7"></path>
-                                 <path class="st1" d="M42.2,45.9c0,0.1,0,0.1,0,0.2c0,0.2,0,0.5-0.1,0.7c0,0,0,0,0,0.1c0,0,0,0.1,0.1,0.1c0.1,0,0.2,0,0.3-0.1
-                                    c0,0,0.1,0,0.1-0.1c0,0,0,0,0-0.1C42.4,46.4,42.3,46.1,42.2,45.9C42.2,45.9,42.2,45.9,42.2,45.9"></path>
-                                 <path class="st1" d="M42.2,45.8c0,0.1,0.1,0.2,0.1,0.3c0.1,0.2,0.2,0.4,0.3,0.6c0,0,0,0,0,0.1c0,0,0.1,0.1,0.1,0
-                                    c0.1-0.1,0.2-0.2,0.3-0.2c0,0,0-0.1,0-0.1c0,0,0,0-0.1-0.1C42.7,46.2,42.5,46,42.2,45.8C42.3,45.8,42.3,45.8,42.2,45.8"></path>
-                                 <path class="st1" d="M42.1,47.1c-0.3,0-0.5-0.1-0.8-0.2c-0.6-0.4-0.8-1.3-0.4-1.9l0,0l0,0c0,0,0,0,0.1,0c0,0,0.1,0.1,0.2,0.1l0,0
-                                    c-0.1-0.1-0.1-0.1-0.2-0.2c0,0,0,0,0,0c-0.4,0.6-0.2,1.4,0.4,1.8c0.6,0.4,1.4,0.3,1.8-0.3c0,0,0,0-0.1,0c0,0-0.1,0-0.2-0.1l0,0
-                                    c0.1,0.1,0.2,0.1,0.2,0.1c0,0,0.1,0,0.1,0l0,0l0,0C43,46.9,42.6,47.1,42.1,47.1z"></path>
-                                 <path class="st1" d="M40.7,43.5c-0.1-0.1-0.2-0.1-0.2,0c0,0.1,0,0.1,0,0.2c0,0,0,0.1,0.1,0C40.7,43.6,40.8,43.5,40.7,43.5
-                                    M40.3,43.3c-0.2,0-0.2,0-0.2,0.1c0.1,0.1,0.1,0.2,0.1,0.4c0.1,0,0.2,0,0.2-0.2C40.5,43.4,40.5,43.3,40.3,43.3 M40,43.4
-                                    c-0.1,0-0.4,0.3-0.4,0.3c0.1,0,0.3,0,0.4,0.2c0,0,0.1-0.1,0.1-0.1S40.2,43.4,40,43.4 M39.5,43.9c-0.1,0.2-0.2,0.3-0.2,0.5
-                                    c0.1-0.1,0.4-0.3,0.6-0.3c0.1,0,0.1-0.1,0.1-0.2c0-0.1-0.2-0.2-0.2-0.2C39.7,43.8,39.6,43.7,39.5,43.9 M39.4,44.6
-                                    c0,0.2,0.1,0.4,0.2,0.4c0-0.1,0.1-0.4,0.4-0.5c0.1,0,0-0.1,0-0.2c0-0.1,0-0.1-0.2-0.1C39.6,44.3,39.4,44.5,39.4,44.6 M39.8,45.2
-                                    c0,0,0.3-0.2,0.3-0.5c0-0.2-0.1-0.2-0.2-0.2c-0.1,0-0.3,0.2-0.4,0.5C39.6,45.1,39.8,45.2,39.8,45.2 M41.3,43.5
-                                    c-0.1,0.1-0.1,0.1,0,0.1c0.1,0.1,0,0.1-0.1,0.2c-0.1,0.1-0.2,0.1-0.3,0c-0.2-0.1-0.4-0.1-0.6,0c-0.2,0.2-0.2,0.5-0.2,0.5
-                                    c0,0.1,0.2,0.2,0.2,0.4c0,0.4-0.3,0.6-0.4,0.6c-0.1,0-0.2-0.1-0.3-0.2c0,0-0.4-0.4-0.2-0.9c0.1-0.5,0.5-0.9,0.8-1
-                                    c0.4-0.1,0.6,0.2,0.6,0.2C40.8,43.5,41.1,43.4,41.3,43.5C41.3,43.3,41.3,43.4,41.3,43.5"></path>
-                                 <path class="st1" d="M42.7,43.8c0.1,0.1,0.2,0.1,0.1,0.1c-0.1,0-0.1,0-0.1,0c0,0-0.1,0-0.1-0.1C42.6,43.7,42.7,43.7,42.7,43.8
-                                    M43,44.1c0,0.1,0.1,0.2,0,0.2c-0.1-0.1-0.2,0-0.3-0.1c0-0.1,0-0.2,0.1-0.2C42.9,43.9,42.9,43.9,43,44.1 M43,44.4
-                                    c0,0.1-0.1,0.4-0.1,0.4c0-0.1-0.1-0.2-0.3-0.4c0,0,0-0.1,0-0.1S42.9,44.2,43,44.4 M42.8,44.9c-0.1,0.1-0.2,0.2-0.4,0.2
-                                    c0-0.1,0.2-0.4,0-0.6c-0.1-0.1,0.1-0.1,0.1-0.1c0,0,0.2,0.2,0.2,0.2C42.8,44.7,42.9,44.8,42.8,44.9 M42.2,45.1
-                                    c-0.1,0-0.3-0.1-0.4-0.1c0.1,0,0.3-0.2,0.3-0.4c0-0.1,0.1,0,0.1,0c0,0,0.1,0,0.1,0.2C42.4,44.9,42.3,45.1,42.2,45.1 M41.6,44.7
-                                    c0,0,0-0.3,0.3-0.4c0.1,0,0.2,0.1,0.2,0.1c0,0.1-0.1,0.3-0.3,0.4C41.7,44.9,41.6,44.7,41.6,44.7 M42.6,43.2c0,0.1,0,0.1-0.1,0
-                                    c-0.1,0-0.1,0-0.2,0.1c-0.1,0.1,0,0.2,0.1,0.3c0.1,0.1,0.2,0.3,0.1,0.6c-0.1,0.2-0.3,0.2-0.4,0.2c-0.1,0-0.2-0.2-0.3-0.1
-                                    c-0.3,0.1-0.3,0.4-0.3,0.4c0,0.1,0.2,0.2,0.2,0.3c0,0,0.4,0.3,0.8,0.1c0.4-0.2,0.6-0.5,0.6-0.9c0-0.4-0.3-0.6-0.4-0.6
-                                    C42.7,43.6,42.7,43.3,42.6,43.2C42.7,43.2,42.6,43.1,42.6,43.2"></path>
-                                 <path class="st1" d="M43.7,45.8C43.8,45.8,43.8,45.8,43.7,45.8c0.1,0.1,0.1,0.1,0,0.1C43.7,45.9,43.7,45.9,43.7,45.8
-                                    C43.6,45.8,43.6,45.8,43.7,45.8 M44,45.8c0.1,0.1,0.1,0.1,0.1,0.1c-0.1,0-0.1,0.1-0.2,0.1c0,0-0.1-0.1-0.1-0.2
-                                    C43.9,45.8,43.9,45.8,44,45.8 M44.1,46c0.1,0,0.1,0.2,0.1,0.3c0,0-0.2-0.1-0.3-0.1c0,0,0-0.1,0-0.1S44,45.9,44.1,46 M44.2,46.4
-                                    c0,0.1,0,0.2-0.1,0.3c0,0-0.1-0.3-0.2-0.3c-0.1,0,0-0.1,0-0.1c0,0,0.2,0,0.2,0C44.1,46.2,44.2,46.3,44.2,46.4 M44,46.7
-                                    c-0.1,0.1-0.2,0.1-0.3,0.1c0-0.1,0.1-0.2,0-0.4c0,0,0-0.1,0.1-0.1c0,0,0.1,0,0.1,0C44,46.5,44.1,46.6,44,46.7 M43.5,46.7
-                                    c0,0-0.1-0.2,0-0.3c0-0.1,0.2,0,0.2,0c0.1,0,0.1,0.2,0.1,0.3C43.7,46.8,43.6,46.8,43.5,46.7 M43.4,45.6
-                                    C43.4,45.6,43.4,45.6,43.4,45.6c-0.1,0.1-0.1,0.1-0.1,0.2c0,0,0.1,0.1,0.2,0.1c0.1,0,0.3,0.1,0.3,0.2c0.1,0.1-0.1,0.3-0.1,0.3
-                                    c0,0-0.2,0-0.2,0.1c-0.1,0.2,0,0.3,0,0.4c0,0,0.2,0,0.2,0c0,0,0.4,0,0.5-0.3c0.1-0.2,0.1-0.5-0.1-0.7c-0.2-0.2-0.4-0.1-0.4-0.1
-                                    C43.6,45.7,43.5,45.6,43.4,45.6C43.4,45.5,43.4,45.5,43.4,45.6"></path>
-                                 <path class="st1" d="M39.3,48.6C39.3,48.7,39.3,48.8,39.3,48.6c0.1,0.1,0.1,0.1,0.1,0c0,0,0,0,0-0.1
-                                    C39.4,48.6,39.3,48.6,39.3,48.6 M39.3,48.9c0.1,0.1,0.1,0.1,0.1,0.1c0-0.1,0.1-0.1,0.2-0.1c0,0-0.1-0.1-0.2-0.1
-                                    C39.3,48.8,39.3,48.8,39.3,48.9 M39.5,49c0,0.1,0.2,0.1,0.3,0.1c0,0-0.1-0.1,0-0.3c0,0-0.1,0-0.1,0S39.4,48.9,39.5,49 M39.9,49.1
-                                    c0.1,0,0.2,0,0.3-0.1c0,0-0.3-0.1-0.3-0.2c0-0.1-0.1,0-0.1,0c0,0,0,0.1,0,0.2C39.7,49.1,39.8,49.1,39.9,49.1 M40.3,49
-                                    c0.1-0.1,0.1-0.2,0.2-0.2c-0.1,0-0.2,0-0.4-0.1c0,0-0.1,0-0.1,0c0,0-0.1,0.1,0,0.1C40,49,40.2,49.1,40.3,49 M40.4,48.6
-                                    c0,0-0.2-0.1-0.3-0.1c-0.1,0,0,0.1,0,0.1c0,0.1,0.2,0.1,0.4,0.1C40.4,48.8,40.4,48.6,40.4,48.6 M39.1,48.3
-                                    C39.2,48.3,39.2,48.3,39.1,48.3c0.1-0.1,0.2,0,0.2,0c0.1,0,0.1,0.1,0.1,0.2c0,0.1,0,0.2,0.2,0.3c0.1,0.1,0.3,0,0.3,0
-                                    c0,0,0-0.2,0.1-0.2c0.2-0.1,0.4,0,0.4,0.1c0,0,0,0.2,0,0.2c0,0-0.1,0.3-0.4,0.4c-0.3,0.1-0.6,0-0.7-0.2c-0.2-0.2-0.1-0.4-0.1-0.4
-                                    C39.3,48.6,39.1,48.4,39.1,48.3C39.1,48.3,39.1,48.3,39.1,48.3"></path>
-                                 <path class="st1" d="M40.6,47.6L40.6,47.6C40.6,47.6,40.6,47.6,40.6,47.6z M42.5,47.7c-0.2,0-0.4,0.1-0.6,0.2
-                                    c-0.1,0.1-0.2,0.1-0.4,0.1c-0.1,0-0.2,0-0.2,0c-0.1,0-0.1,0-0.2,0c0-0.1,0-0.2-0.1-0.2c0.1-0.1,0.2-0.2,0.3-0.1c0,0,0-0.1,0-0.1
-                                    c-0.1,0-0.2,0-0.3,0c0,0,0.1,0,0.1-0.1c-0.1,0-0.2,0.2-0.2,0.4c-0.1-0.1-0.2-0.1-0.1-0.2c0,0,0-0.1,0-0.1c0.1-0.1,0.2-0.2,0.3-0.2
-                                    c-0.1-0.1-0.1-0.1-0.3,0.1c0,0,0.1-0.1,0.1-0.1c-0.1,0.1-0.1,0.2-0.2,0.3c0,0-0.1-0.1-0.1-0.2c0,0,0-0.1,0-0.1c-0.1,0,0-0.1,0-0.1
-                                    c0.1,0,0.1-0.1,0.2-0.1c0,0,0.1,0,0.1,0.1c0,0,0,0,0,0c0,0,0-0.1,0-0.1c-0.1-0.1-0.2,0-0.3,0.1c0,0,0-0.1,0.1-0.1
-                                    c-0.1,0-0.2,0.2-0.2,0.3c0,0,0,0.1,0,0.1v0c0,0,0,0,0,0c0,0,0,0,0,0c0,0.1-0.1,0.1-0.2,0.2c0,0-0.1,0-0.1,0.1
-                                    c-0.1,0.1-0.1,0.1-0.2,0.2c0.1,0.1,0.1,0.2,0.3,0.2c0.1,0.1,0.3,0.2,0.3,0.1c0-0.1,0.1-0.1,0.1-0.2c0,0,0,0-0.1,0.3
-                                    c0.1,0,0.1,0,0.2,0c0.3,0,0.6,0,0.8-0.1c0.2,0,0.5-0.1,0.6-0.3c0.1,0,0.1-0.1,0.2-0.2c0,0,0-0.1,0-0.1c0,0,0,0,0,0
-                                    C42.6,47.8,42.6,47.7,42.5,47.7C42.6,47.7,42.5,47.7,42.5,47.7"></path>
-                                 <path class="st1" d="M40.7,47c0.1,0,0.1,0,0.1,0c0,0,0-0.1,0-0.1C40.8,46.9,40.7,46.9,40.7,47c-0.1,0-0.1,0-0.2,0c0,0,0,0-0.1,0.1
-                                    c0,0,0.1-0.1,0.1-0.1c-0.1,0-0.1,0.1-0.2,0.2c0,0,0.1,0,0.1,0C40.6,47.1,40.6,47,40.7,47"></path>
-                                 <path class="st1" d="M40.4,46.3c0.1,0,0.1,0,0.2,0c-0.1-0.1-0.3-0.1-0.3,0.1c-0.1,0.2-0.1,0.3-0.2,0.5c0,0,0,0,0,0
-                                    c0-0.2,0.1-0.3,0.1-0.4c0-0.1,0-0.3,0.1-0.4c0.1,0,0.2,0.1,0.4,0.1c0,0,0,0,0,0c0,0-0.1,0-0.1,0c-0.3-0.1-0.3-0.1-0.3,0.2
-                                    c0,0.2-0.1,0.3-0.1,0.5c0-0.3,0-0.5,0-0.8c0.2,0,0.3,0,0.5,0.1c0,0,0,0,0,0c-0.1,0-0.3,0-0.4-0.1c-0.1,0-0.1,0-0.1,0.1
-                                    c0,0.1,0,0.3,0,0.4c0,0.1,0,0.2,0,0.3c0,0-0.1-0.2-0.1-0.3c0-0.1,0-0.3,0-0.4c0.2,0,0.4,0,0.6,0c0,0,0,0,0,0c-0.2,0-0.4,0-0.6,0
-                                    c0,0,0,0,0,0v0c0,0,0,0,0,0c0,0,0.1-0.1,0.1-0.1c0,0,0,0-0.1,0c0,0,0,0,0,0c-0.1,0.1-0.2,0.1-0.2,0.2c-0.1,0.1-0.1,0.2-0.1,0.3
-                                    c0,0.1,0,0.2,0,0.3c0,0,0,0,0,0c-0.2-0.2-0.5-0.4-0.5-0.8c-0.1,0.1,0,0.4,0.3,0.6c0,0-0.1,0-0.1,0c-0.1-0.1-0.1-0.2-0.3-0.3
-                                    c0.1,0.1,0.2,0.2,0.2,0.2c0,0,0,0,0,0c-0.1,0-0.2-0.1-0.3-0.1c0,0,0,0,0,0c-0.1-0.2-0.1-0.3-0.2-0.5c-0.1-0.2-0.2-0.4-0.5-0.5
-                                    c-0.2-0.1-0.4,0-0.6,0.1c-0.2,0.2-0.3,0.3-0.2,0.6c0,0,0,0,0,0c0,0.5,0.4,0.8,0.7,1.2c0.4,0.4,0.9,0.8,1.4,1.1c0,0,0,0,0,0
-                                    c-0.1-0.1-0.2-0.1-0.3-0.2c-0.5-0.4-1-0.8-1.4-1.2c-0.1-0.1-0.2-0.3-0.3-0.5c0,0,0-0.1,0-0.1c0.4,0.5,0.9,0.9,1.4,1.3
-                                    c0,0-0.1-0.1-0.1-0.1c0,0-0.1-0.1-0.1-0.1c-0.4-0.3-0.7-0.6-1-1c-0.2-0.2-0.2-0.4-0.1-0.6c0.1-0.3,0.5-0.4,0.8-0.2
-                                    c0.1,0.1,0.2,0.1,0.2,0.2c0.1,0.1,0.1,0.3,0.2,0.4c0,0,0,0,0,0.1c-0.1-0.1-0.2-0.1-0.3-0.2c0,0,0,0,0,0c0.1,0.1,0.2,0.1,0.2,0.2
-                                    c0.1,0.1,0.2,0.1,0.2,0.2c-0.1-0.2-0.3-0.3-0.4-0.4c0,0,0,0,0,0c0.1,0,0.1,0.1,0.2,0.1c0,0,0.1,0.1,0.1,0.1c0,0,0,0.1,0.1,0.1
-                                    c0,0-0.1,0-0.1-0.1c0,0,0,0,0,0.1c0,0,0.1,0.1,0.1,0.1c-0.1,0-0.1,0-0.2-0.1c-0.1-0.1-0.1-0.1-0.2-0.2c0,0,0,0,0,0
-                                    c0.1,0.1,0.2,0.2,0.3,0.3c0.2,0.2,0.5,0.4,0.7,0.6c0.1,0,0.1,0.1,0.2,0.1c0,0,0,0,0,0c0.1,0.1,0.2,0.2,0.2,0.3
-                                    c0,0.1,0.1,0.1,0.1,0.2c0.1,0.2,0.2,0.2,0.3,0c0,0,0.1,0,0.1-0.1c0.1-0.1,0.1-0.1,0.2-0.2c0-0.1-0.1-0.2-0.1-0.3c0,0,0,0,0,0
-                                    c0-0.1,0-0.1-0.1-0.1c0,0,0,0.1-0.1,0.1c0,0,0,0,0,0c0-0.1,0-0.2,0-0.3c0.1-0.1,0.1-0.2,0.2-0.2c0,0,0.1,0,0.1,0
-                                    c0-0.1,0-0.1-0.1,0c-0.1,0-0.1,0.1-0.2,0.2c0,0,0-0.1,0-0.1c0,0,0,0,0,0c0,0.1,0,0.3,0,0.4c0,0,0,0-0.1,0
-                                    C40.2,46.8,40.2,46.6,40.4,46.3C40.3,46.4,40.4,46.3,40.4,46.3"></path>
-                                 <path class="st1" d="M37.9,49.3h2.5L38,49.8C38,49.8,37.9,49.6,37.9,49.3z"></path>
-                              </g>
-                           </g>
-                        </svg>
-                        <span>FAITES-VOUS LIVRER</span>
-                     </a>
-                  </div>
-               </div>
             </div>
+
+
+
+
+
             <section id="decouvrir" class="decouvrir about section--purple  animated" data-wow-duration="1000ms" data-wow-delay="700ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 700ms; animation-name: opacityAllsi;">
                <img src="img/image_d_02.jpg">
                <div class="d-flex justify-content-center ">
-                  <h3 class="title-d titled1  animated" style="visibility: visible; animation-name: opacityAllsi;"><img src="img/title_d.png" class="title_d" data-wow-duration="1000ms" data-wow-delay="700ms">
+                  <h3 class="title-d titled1  animated" style="visibility: visible; animation-name: opacityAllsi;">
+                    <img src="img/title_d.png" class="title_d" data-wow-duration="1000ms" data-wow-delay="700ms">
+
                      <span>Comme à Bangkok...</span>
                   </h3>
                </div>
             </section>
+
+
+
+
+<!-- section start  -->
             <section id="decouvrir2" class="decouvrir2 about section--purple   animated" data-wow-duration="1000ms" data-wow-delay="500ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 500ms; animation-name: opacityAllsi;">
                <div class="container d-flex align-items-center">
+                  <div class="row align-items-center">
                   <div class="col-md-5 ">
-                     <img class=" animated" data-wow-duration="1000ms" data-wow-delay="1500ms" src="http://www.pitayaresto.guka5588.odns.fr/wp-content/uploads/2020/06/image_d_03.jpg" style="visibility: visible; animation-duration: 1000ms; animation-delay: 1500ms; animation-name: opacityAllsi;">
+                     <img class=" animated" data-wow-duration="1000ms" data-wow-delay="1500ms" src="img/image_d_03.jpg" style="visibility: visible; animation-duration: 1000ms; animation-delay: 1500ms; animation-name: opacityAllsi;">
                   </div>
                   <div class="col-md-7 ">
                      <h3 class="title-d " data-wow-duration="1000ms" data-wow-delay="1000ms" style=" animation-duration: 1000ms; animation-delay: 1000ms; animation-name: none;">
@@ -903,7 +293,13 @@
                      </div>
                   </div>
                </div>
+               </div>
             </section>
+            <!-- section end -->
+
+
+
+<!-- section start  -->
             <section id="decouvrir3" class="decouvrir3 about section--purple " data-wow-duration="1000ms" data-wow-delay="500ms" style=" animation-duration: 1000ms; animation-delay: 500ms; animation-name: none;">
                <div class="col-md-4 ml-auto bg-c"> </div>
                <div class="container d-flex align-items-center">
@@ -913,59 +309,68 @@
                         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                         </ol>-->
-                     <div class="carousel-inner">
-                        <div class="carousel-item active">
-                           <div class="col-md-4 bg-t">
-                              <h3 class="title-d">La street 
-                                 food de 
-                                 Bangkok
-                              </h3>
-                           </div>
-                           <div class="col-md-8 bg-p">
-                              <img src="img/image_d_04.jpg">
-                           </div>
-                        </div>
-                        <div class="carousel-item">
-                           <div class="col-md-4 bg-t">
-                              <h3 class="title-d">La street 
-                                 food de2
-                                 Bangkok
-                              </h3>
-                           </div>
-                           <div class="col-md-8 bg-p">
-                              <img src="img/image_d_04.jpg">
+                        <div class="carousel-inner">
+                           <div class="carousel-item active">
+                              <div class="col-md-4 bg-t">
+                                 <h3 class="title-d">
+                                  Savourez 
+                                  Pitaya 
+                                  Rennes
+                               </h3>
+                            </div>
+                            <div class="col-md-8 bg-p">
+                              <img  class="object-unset"src="img/image_d_04.jpg">
                            </div>
                         </div>
                         <div class="carousel-item">
                            <div class="col-md-4 bg-t">
-                              <h3 class="title-d">La street 
-                                 food de3 
-                                 Bangkok
+                              <h3 class="title-d">
+                                 Savourez 
+                                 Pitaya 
+                                 Rennes
                               </h3>
                            </div>
                            <div class="col-md-8 bg-p">
-                              <img src="img/image_d_04.jpg">
+                              <img class="object-unset" src="img/image_d_04.jpg">
                            </div>
+                        </div>
+                        <div class="carousel-item">
+                           <div class="col-md-4 bg-t">
+                              <h3 class="title-d">
+                               Savourez 
+                               Pitaya 
+                               Rennes
+                            </h3>
+                         </div>
+                         <div class="col-md-8 bg-p">
+                           <img class="object-unset" src="img/image_d_04.jpg">
                         </div>
                      </div>
-                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  </div>
+                     <a class="decouvrir carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                      <span class="sr-only">Previous</span>
                      </a>
-                     <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                     <a class="decouvrir carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
                      <span class="sr-only">Next</span>
                      </a>
                   </div>
                </div>
             </section>
+<!-- section end -->
+
+
+<!-- section start  -->
+
             <section id="decouvrir4" class="decouvrir4 about section--purple " data-wow-duration="1000ms" data-wow-delay="500ms" style=" animation-duration: 1000ms; animation-delay: 500ms; animation-name: none;">
                <div class="container d-flex align-items-center">
+                  <div class="row align-items-center">
                   <div class="col-md-4 ml-auto bg-c2 wow fadeInLeftm" data-wow-duration="1000ms" data-wow-delay="1500ms" style=" animation-duration: 1000ms; animation-delay: 1500ms; animation-name: none;"> </div>
-                  <div class="col-md-6 ">
-                     <img src="http://www.pitayaresto.guka5588.odns.fr/wp-content/uploads/2020/06/image_d_05.jpg" class="title-d " data-wow-duration="1000ms" data-wow-delay="2100ms" style=" animation-duration: 1000ms; animation-delay: 2100ms; animation-name: none;">
+                  <div class="col-lg-6 ">
+                     <img src="img/image_d_05.jpg" class="title-d " data-wow-duration="1000ms" data-wow-delay="2100ms" style=" animation-duration: 1000ms; animation-delay: 2100ms; animation-name: none;">
                   </div>
-                  <div class="col-md-6 ">
+                  <div class="col-lg-6 ">
                      <h3 class="title-d " data-wow-duration="1000ms" data-wow-delay="1000ms" style=" animation-duration: 1000ms; animation-delay: 1000ms; animation-name: none;">
                         Une cuisine spectacle comme là-bas         
                      </h3>
@@ -974,10 +379,16 @@
                      </div>
                   </div>
                </div>
+               </div>
             </section>
+<!-- section end -->
+
+
+<!-- section start  -->
             <section id="decouvrir5" class="decouvrir5 about section--purple " data-wow-duration="1000ms" data-wow-delay="500ms" style=" animation-duration: 1000ms; animation-delay: 500ms; animation-name: none;">
                <div class="container d-flex align-items-center">
-                  <div class="col-md-6 ">
+                  <div class="row align-items-center">
+                  <div class="col-lg-6 ">
                      <h3 class="title-d " data-wow-duration="1000ms" data-wow-delay="1000ms" style=" animation-duration: 1000ms; animation-delay: 1000ms; animation-name: none;"> 
                         Le savoir-faire street food thaï         
                      </h3>
@@ -989,18 +400,24 @@
                      </div>
                   </div>
                   <div class="col-md-4 ml-auto bg-c2 rightc"> </div>
-                  <div class="col-md-6 ">
-                     <img src="http://www.pitayaresto.guka5588.odns.fr/wp-content/uploads/2020/06/image_d_06.jpg" class="" data-wow-duration="1000ms" data-wow-delay="1500ms" style=" animation-duration: 1000ms; animation-delay: 1500ms; animation-name: none;"> 
+                  <div class="col-lg-6 ">
+                     <img src="img/image_d_06.jpg" class="" data-wow-duration="1000ms" data-wow-delay="1500ms" style=" animation-duration: 1000ms; animation-delay: 1500ms; animation-name: none;"> 
                   </div>
                </div>
+               </div>
             </section>
+<!-- section end -->
+
+
+<!-- section start -->
             <section id="decouvrir6" class="decouvrir6 about section--purple " data-wow-duration="1000ms" data-wow-delay="500ms" style=" animation-duration: 1000ms; animation-delay: 500ms; animation-name: none;">
                <div class="container d-flex align-items-center">
+                  <div class="row align-items-center">
                   <div class="col-md-4 ml-auto bg-c2"> </div>
-                  <div class="col-md-6 ">
-                     <img src="http://www.pitayaresto.guka5588.odns.fr/wp-content/uploads/2020/06/image_d_07.jpg" class="" data-wow-duration="1000ms" data-wow-delay="2000ms" style=" animation-duration: 1000ms; animation-delay: 2000ms; animation-name: none;">
+                  <div class="col-lg-6 ">
+                     <img src="img/image_d_07.jpg" class="" data-wow-duration="1000ms" data-wow-delay="2000ms" style=" animation-duration: 1000ms; animation-delay: 2000ms; animation-name: none;">
                   </div>
-                  <div class="col-md-6 ">
+                  <div class="col-lg-6 ">
                      <h3 class="title-d " data-wow-duration="1000ms" data-wow-delay="1000ms" style=" animation-duration: 1000ms; animation-delay: 1000ms; animation-name: none;"> Des produits frais rigoureusement sélectionnées 
                      </h3>
                      <div class="text " data-wow-duration="1000ms" data-wow-delay="1700ms" style=" animation-duration: 1000ms; animation-delay: 1700ms; animation-name: none;">
@@ -1009,10 +426,17 @@
                      </div>
                   </div>
                </div>
+               </div>
             </section>
+<!-- section end -->
+
+
+
+<!-- section start  -->
             <section id="decouvrir7" class="decouvrir7 about section--purple " data-wow-duration="1000ms" data-wow-delay="500ms" style=" animation-duration: 1000ms; animation-delay: 500ms; animation-name: none;">
                <div class="container d-flex align-items-center">
-                  <div class="col-md-6 ">
+                  <div class="row align-items-center">
+                  <div class="col-lg-6 ">
                      <h3 class="title-d " data-wow-duration="1000ms" data-wow-delay="1000ms" style=" animation-duration: 1000ms; animation-delay: 1000ms; animation-name: none;"> 
                         Hygiène irréprochable 
                      </h3>
@@ -1024,18 +448,25 @@
                      </div>
                   </div>
                   <div class="col-md-4 ml-auto bg-c2 rightc"> </div>
-                  <div class="col-md-6 ">
-                     <img src="http://www.pitayaresto.guka5588.odns.fr/wp-content/uploads/2020/06/image_d_08.jpg" class=" " data-wow-duration="1000ms" data-wow-delay="1500ms" style=" animation-duration: 1000ms; animation-delay: 1500ms; animation-name: none;">
+                  <div class="col-lg-6 ">
+                     <img src="img/image_d_08.jpg" class=" " data-wow-duration="1000ms" data-wow-delay="1500ms" style=" animation-duration: 1000ms; animation-delay: 1500ms; animation-name: none;">
                   </div>
                </div>
+               </div>
             </section>
+<!-- section end -->
+
+
+
+<!-- section start  -->
             <section id="decouvrir8" class="decouvrir8 about section--purple " data-wow-duration="1000ms" data-wow-delay="500ms" style=" animation-duration: 1000ms; animation-delay: 500ms; animation-name: none;">
                <div class="container d-flex align-items-center">
+                  <div class="row align-items-center">
                   <div class="col-md-4 ml-auto bg-c2"> </div>
-                  <div class="col-md-6 ">
-                     <img src="http://www.pitayaresto.guka5588.odns.fr/wp-content/uploads/2020/06/image_d_09.jpg" class=" " data-wow-duration="1000ms" data-wow-delay="1500ms" style=" animation-duration: 1000ms; animation-delay: 1500ms; animation-name: none;">
+                  <div class="col-lg-6 ">
+                     <img src="img/image_d_09.jpg" class=" " data-wow-duration="1000ms" data-wow-delay="1500ms" style=" animation-duration: 1000ms; animation-delay: 1500ms; animation-name: none;">
                   </div>
-                  <div class="col-md-6 ">
+                  <div class="col-lg-6 ">
                      <h3 class="title-d " data-wow-duration="1000ms" data-wow-delay="1000ms" style=" animation-duration: 1000ms; animation-delay: 1000ms; animation-name: none;">
                         Service rapide oui, mais chaleureux ! 
                      </h3>
@@ -1047,60 +478,72 @@
                      </div>
                   </div>
                </div>
+               </div>
             </section>
-         </main>
-         <!-- End #main -->
-         <!-- ======= Footer ======= -->
-         <!-- ======= Footer ======= -->
-         <footer id="footer">
-            <div class="container">
-               <div class="row">
-                  <div class="col-md-3 col_f1">
-                     <li id="media_image-3" class="widget widget_media_image"><img width="135" height="112" src="http://www.pitayaresto.guka5588.odns.fr/wp-content/uploads/2020/05/logo_footer.png" class="image wp-image-133  attachment-full size-full" alt="" style="max-width: 100%; height: auto;" srcset="http://www.pitayaresto.guka5588.odns.fr/wp-content/uploads/2020/05/logo_footer.png 135w, http://www.pitayaresto.guka5588.odns.fr/wp-content/uploads/2020/05/logo_footer-120x100.png 120w" sizes="(max-width: 135px) 100vw, 135px" /></li>
-                  </div>
-                  <div class="col-md-3">
-                  </div>
-                  <div class="col-md-2">
-                  </div>
-                  <div class="col-md-4  d-flex align-items-end flex-column col_f2">
-                     <div class="mt-auto">
-                        <li id="nav_menu-2" class="widget widget_nav_menu">
-                           <ul id="menu-footer" class="menu">
-                              <li id="menu-item-134" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-134"><a href="#">Mention légale</a></li>
-                              <li id="menu-item-226" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-226"><a href="#">Jobs</a></li>
-                              <li id="menu-item-135" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-135"><a href="#">Contact</a></li>
-                           </ul>
-                        </li>
-                     </div>
-                     <ol class="link-rs">
-                        <li>
-                           <a href="#" class="browser-window__link"><img src="img/icon-facbook.png"><span class="slide-topp slide-topright"> Facebook </span></a>
-                        </li>
-                        <li>
-                           <a href="#" class="browser-window__link"><img src="img/icon-inst.png"><span class="slide-topp slide-topright"> Instagram </span></a>
-                        </li>
-                        <li>
-                           <a href="#" class="browser-window__link">
-                           <span><i class="fa fa-twitter"></i></span>
-                           <span class="slide-topp slide-topright" style="right: -69px;"> Twitter </span>
-                           </a>
-                        </li>
-                        <li>
-                           <a href="#" class="browser-window__link"><i class="fa fa-youtube" style="font-size:22px;margin-top: 8px"></i>
-                           <span class="slide-topp slide-topright" style="right: -69px;"> Youtube </span>
-                           </a>
-                        </li>
-                     </ol>
-                  </div>
+            <!-- section end -->
+
+      <!-- ======= Footer ======= -->
+      <footer id="footer">
+         <div class="container">
+            <div class="row">
+               <div class=" col-3  col-sm-3 col-lg-3  col_f1">
+                  <li id="media_image-3" class="widget widget_media_image"><img width="135" height="112" src="img/logo_footer.png" class="image wp-image-133  attachment-full size-full" alt="" style="max-width: 100%; height: auto;" srcset="img/logo_footer.png 135w, img/logo_footer-120x100.png 120w" sizes="(max-width: 135px) 100vw, 135px" /></li>
                </div>
-               <div class="copyright">
-                  @2020, <span>PITAYA</span>
+               <div class=" col-1 d-none d-sm-block col-md-1 col-lg-2 ">
                </div>
-               <div class="credits">
+               <div class=" col-1 d-none d-sm-block col-md-1 col-lg-1 ">
+               </div>
+               <div class=" col-9 col-sm-7  col-lg-6 d-flex align-items-end flex-column col_f2">
+                  <div class="mt-auto">
+                     <li id="nav_menu-2" class="widget widget_nav_menu">
+                        <ul id="menu-footer" class="menu">
+                           <li id="menu-item-134" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-134"><a href="#">Mention légale</a></li>
+                           <li id="menu-item-226" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-226"><a href="#">Jobs</a></li>
+                           <li id="menu-item-135" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-135"><a href="#">Contact</a></li>
+                        </ul>
+                     </li>
+                  </div>
+                  <ol class="link-rs">
+                     <li>
+                        <a href="#" class="browser-window__link"><img src="img/icon-facbook.png"><span class="slide-topp slide-topright"> Facebook </span></a>
+                     </li>
+                     <li>
+                        <a href="#" class="browser-window__link"><img src="img/icon-inst.png"><span class="slide-topp slide-topright"> Instagram </span></a>
+                     </li>
+                     <li>
+                        <a href="#" class="browser-window__link">
+                        <span><i class="fa fa-twitter"></i></span>
+                        <span class="slide-topp slide-topright" style="right: -69px;"> Twitter </span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#" class="browser-window__link"><i class="fa fa-youtube" style="font-size:22px;margin-top: 8px"></i>
+                        <span class="slide-topp slide-topright" style="right: -69px;"> Youtube </span>
+                        </a>
+                     </li>
+                  </ol>
                </div>
             </div>
-         </footer>
-         <!-- End Footer -->
-      </main>
+            <div class="copyright">
+               @2020, <span>PITAYA</span>
+            </div>
+            <div class="credits">
+            </div>
+         </div>
+      </footer>
+      <!-- End Footer -->
+ 
+
+<script>
+            
+
+
+</script>
+
+     
+               <script src="assets/js/wow.min.js"></script> 
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+                <script type='text/javascript' src='assets/js/all-js.js'></script>
    </body>
 </html>

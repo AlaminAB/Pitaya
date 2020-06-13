@@ -1,4 +1,5 @@
 
+
            jQuery('.navicon').on('click', function (e) {
                     e.preventDefault();
                     jQuery(this).toggleClass('navicon--active');
@@ -11,7 +12,20 @@
                   });
                   
                   
-
+      jQuery(window).on('load', function () {
+         setTimeout(function () {
+         jQuery(window).scrollTop(0);
+         });         
+         });
+         
+             jQuery(document).ready(function($) {
+                  
+                 $(".scroll").click(function(event){    
+                     event.preventDefault();
+                     $('html,body').animate({scrollTop:$(this.hash).offset().top},0);
+                 });
+             });
+             
 
 jQuery(document).ready(function(jQuery) {
                       jQuery(".scroll").click(function(event){    
@@ -20,101 +34,13 @@ jQuery(document).ready(function(jQuery) {
                        });
                        
                      
+     
+
+
                   
-                    jQuery( ".link_liver" ).click(function() {
-                      jQuery(".toggle_liver").toggleClass("toggle_liver--active");
-                   jQuery(".link_liver").toggleClass("active");
-                      });
-                   
-                   jQuery( ".link_clikcol" ).click(function() {
-                      jQuery(".toggle_clickancollect").toggleClass("toggle_clickancollect--active");
-                    jQuery(".link_clikcol").toggleClass("active");
-                      });
-                   
-                  
-                      jQuery('#recipeCarousel').carousel({
-                   interval: 8000
-                  })
-                  
-                  jQuery('#recipeCarousel .carousel-item').each(function() {
-                   var minPerSlide = 4;
-                   var next = jQuery(this).next();
-                   if (!next.length) {
-                       next = jQuery(this).siblings(':first');
-                   }
-                   next.children(':first-child').clone().appendTo(jQuery(this));
-                  
-                   for (var i = 0; i < minPerSlide; i++) {
-                       next = next.next();
-                       if (!next.length) {
-                           next = jQuery(this).siblings(':first');
-                       }
-                  
-                       next.children(':first-child').clone().appendTo(jQuery(this));
-                   }
-                  });
-                  
-                  jQuery('#recipeCarousel2').carousel({
-                   interval: 8000
-                  })
-                  
-                  
-                  jQuery('#recipeCarousel2 .carousel-item').each(function() {
-                   var minPerSlide = 4;
-                   var next = jQuery(this).next();
-                   if (!next.length) {
-                       next = jQuery(this).siblings(':first');
-                   }
-                   next.children(':first-child').clone().appendTo(jQuery(this));
-                  
-                   for (var i = 0; i < minPerSlide; i++) {
-                       next = next.next();
-                       if (!next.length) {
-                           next = jQuery(this).siblings(':first');
-                       }
-                  
-                       next.children(':first-child').clone().appendTo(jQuery(this));
-                   }
-                  });
-                  
-                  jQuery('#recipeCarousel3').carousel({
-                   interval: 8000
-                  })
-                  
-                  
-                  jQuery('#recipeCarousel').hover(function(){
-                  jQuery("#recipeCarousel").carousel('pause');
-                  },function(){
-                  jQuery("#recipeCarousel").carousel('cycle');
-                  });
-                  
-                  
-                  jQuery('#heroCarousel').hover(function(){
-                  jQuery("#heroCarousel").carousel('cycle');
-                  },function(){
-                  jQuery("#heroCarousel").carousel('cycle');
-                  });
-                  jQuery("#heroCarousel").carousel('cycle');
-                  
-                  jQuery('#recipeCarousel3 .carousel-item').each(function() {
-                   var minPerSlide = 4;
-                   var next = jQuery(this).next();
-                   if (!next.length) {
-                       next = jQuery(this).siblings(':first');
-                   }
-                   next.children(':first-child').clone().appendTo(jQuery(this));
-                  
-                   for (var i = 0; i < minPerSlide; i++) {
-                       next = next.next();
-                       if (!next.length) {
-                           next = jQuery(this).siblings(':first');
-                       }
-                  
-                       next.children(':first-child').clone().appendTo(jQuery(this));
-                   }
-                  });
-                  
-                  
+
+
+                
                   
                   function isScrolledIntoView(el) {
                   var elemTop = el.getBoundingClientRect().top;
