@@ -32,33 +32,33 @@
           });
        
       
-      //     jQuery('#recipeCarousel').carousel({
-      //  interval: 8000
-      // })
+          jQuery('#recipeCarousel').carousel({
+       interval: 8000
+      })
       
       
-      // jQuery('#recipeCarousel2').carousel({
-      //  interval: 8000
-      // })
+      jQuery('#recipeCarousel2').carousel({
+       interval: 8000
+      })
       
       
-      // jQuery('#recipeCarousel2 .carousel-item').each(function() {
-      //  var minPerSlide = 4;
-      //  var next = jQuery(this).next();
-      //  if (!next.length) {
-      //      next = jQuery(this).siblings(':first');
-      //  }
-      //  next.children(':first-child').clone().appendTo(jQuery(this));
+      jQuery('#recipeCarousel2 .carousel-item').each(function() {
+       var minPerSlide = 4;
+       var next = jQuery(this).next();
+       if (!next.length) {
+           next = jQuery(this).siblings(':first');
+       }
+       next.children(':first-child').clone().appendTo(jQuery(this));
       
-      //  for (var i = 0; i < minPerSlide; i++) {
-      //      next = next.next();
-      //      if (!next.length) {
-      //          next = jQuery(this).siblings(':first');
-      //      }
+       for (var i = 0; i < minPerSlide; i++) {
+           next = next.next();
+           if (!next.length) {
+               next = jQuery(this).siblings(':first');
+           }
       
-      //      next.children(':first-child').clone().appendTo(jQuery(this));
-      //  }
-      // });
+           next.children(':first-child').clone().appendTo(jQuery(this));
+       }
+      });
       
       
       
@@ -70,12 +70,12 @@
       // });
       
       
-      // jQuery('#heroCarousel').hover(function(){
-      // jQuery("#heroCarousel").carousel('cycle');
+      // $('#heroCarousel').hover(function(){
+      // $("#heroCarousel").carousel('cycle');
       // },function(){
-      // jQuery("#heroCarousel").carousel('cycle');
+      // $("#heroCarousel").carousel('cycle');
       // });
-      // jQuery("#heroCarousel").carousel('cycle');
+      // $("#heroCarousel").carousel('cycle');
       
       // jQuery('#recipeCarousel3 .carousel-item').each(function() {
       //  var minPerSlide = 4;
