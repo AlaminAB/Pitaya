@@ -6931,10 +6931,15 @@ button.owl-prev:focus {
   position: relative;
   margin-top: 50px;
 }
-.rd_input img {
-  position: absolute;
-  right: 20px;
-  top: 27px;
+.rd_input form button {
+    position: absolute;
+    top: 30%;
+    right: 27px;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0;
+    margin: 0;
 }
 .rd_inp_footer {
   display: flex;
