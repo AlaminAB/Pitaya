@@ -6900,6 +6900,138 @@ button.owl-prev:focus {
   height: 100vh !important;
 }
 
+/* map page  */
+
+/* rsl css */
+.rest_details {
+  width: 100%;
+  max-width: 850px;
+  padding: 85px;
+  background: #070707;
+  position: relative;
+  z-index: 2;
+}
+.rd_title {
+  margin-top: 10px;
+}
+.rd_input input {
+  line-height: 94px;
+  background: transparent;
+  border: 2px solid #ec6813;
+  padding: 0 25px;
+  width: 100%;
+  display: block;
+  font-size: 28px;
+  color: #333333;
+}
+.rd_input input::placeholder{
+  color: #333333;
+}
+.rd_input {
+  position: relative;
+  margin-top: 50px;
+}
+.rd_input img {
+  position: absolute;
+  right: 20px;
+  top: 27px;
+}
+.rd_inp_footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #2e2e2e;
+  margin-bottom: 55px;
+}
+.rd_inp_footer p {
+  font-size: 20px;
+  color: #333;
+  margin: 0;
+  font-family: "Proxima-Me", sans-serif;
+}
+.rd_inp_footer p.active {
+  color: #fff;
+  text-decoration: underline;
+}
+.rd_location h3 {
+  font-size: 30px;
+  font-family: "ProximaNova-Black", sans-serif;
+  text-transform: uppercase;
+}
+.rd_loc_text span {
+  display: block;
+  font-size: 26px;
+  color: #a5a5a5;
+  margin-bottom: 5px;
+}
+.rd_loc_text span:last-child {
+  padding-left: 46px;
+}
+.rd_loc_text span img {
+  margin-right: 15px;
+}
+
+.rd_menu ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.rd_menu ul li {
+  display: block;
+  list-style: none;
+  position: relative;
+}
+
+.rd_menu ul li a {
+  font-size: 26px;
+  color: #a5a5a5;
+}
+
+.rd_menu ul li.active a {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.rd_menu ul li.active img {
+  position: absolute;
+  top: -45px;
+  transform: translateX(-50%);
+  left: 50%;
+} 
+.rd_menu {
+  padding-bottom: 55px;
+  margin-bottom: 55px;
+  border-bottom: 1px solid #2e2e2e;
+  margin-top: 60px;
+}
+.rd_input input:focus{
+  outline: 0;
+  border: 0;
+}
+.rest_loc_wrp{
+  position: relative;
+}
+.map_wrp {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #212121;
+  min-height: 500px;
+}
+#chartdiv{
+  width: 100%;
+  height: 100%;
+}
+
+/* map page end */
+
+
+
 
 /* responsive  */
 
@@ -6993,6 +7125,14 @@ button.owl-prev:focus {
     position: absolute;
     right: 50px;
     }
+
+    /* map page  */
+     .rest_details {
+        width: 100%;
+        max-width: 650px;
+        padding: 45px;
+        background: #070707;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991px){
@@ -7049,6 +7189,16 @@ ul.nav.nav-tabs li {
 .decouvrir.carousel-control-next {
     top: 0px;
 }
+/* map page  */
+ .rest_details {
+        max-width: 100%;
+    }
+    .map_wrp {
+        position: static;
+      }
+       #chartdiv {
+        height: 500px;
+    }
 }
 
 @media (max-width: 767px){
@@ -7161,7 +7311,98 @@ footer#footer li#nav_menu-2 {
     display: block;
     margin: 0 auto;
 }
+/* map page */
+ .rest_details {
+        padding: 30px;
+    }
+    .rd_input input {
+        line-height: 50px;
+    }
+    .rd_input img {
+        top: 13px;
+        width: 30px;
+    }
+    .rd_input {
+        position: relative;
+        margin-top: 30px;
+    }
+    .rd_loc_text span {
+        font-size: 22px;
+    }
+    .rd_menu ul li a {
+        font-size: 20px;
+        color: #a5a5a5;
+    }
+    .map_wrp {
+        position: static;
+      }
+      #chartdiv {
+        height: 500px;
+    }
 }
+
+@media (max-width: 500px) {
+    .bottom_slider{
+        display: none !important;
+    }
+    .heroclass{
+        display: none !important;
+    }
+    #header{
+        display: none !important;
+    }
+
+
+
+
+
+
+
+    .rd_title .title_h3 span, .title_h3 label {
+        font-size: 32px;
+    }
+    .rd_title .title_h3 {
+        font-size: 34px;
+        line-height: 20px;
+    }
+    .rd_input input {
+        line-height: 40px;
+        font-size: 16px;
+    }
+    .rd_input img {
+        width: 20px;
+    }
+    .rd_inp_footer p {
+        font-size: 12px;
+    }
+    .rd_inp_footer {
+        padding-bottom: 30px;
+        margin-bottom: 35px;
+    }
+    .rd_location h3 {
+        font-size: 22px;
+    }
+    .rd_loc_text span {
+        font-size: 15px;
+    }
+    .rd_loc_text span img {
+        margin-right: 10px;
+        width: 15px;
+    }
+    .rd_menu ul li a {
+        font-size: 13px;
+    }
+    .rd_menu ul li.active img {
+        top: -35px;
+        width: 30px;
+    }
+    .rd_menu {
+        padding-bottom: 35px;
+        margin-bottom: 35px;
+    }
+}
+
+
 
 @media  (max-width: 640px){
   .owl-nav {
